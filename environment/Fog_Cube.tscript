@@ -1,0 +1,8 @@
+
+singleton TSShapeConstructor(Fog_CubeDAE)
+{
+   baseShapeAsset = "testMaps:Fog_Cube";
+   lodType = "TrailingNumber";
+   neverImport = "env*";
+   loadLights = "0";
+};

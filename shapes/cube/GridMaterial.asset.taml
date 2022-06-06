@@ -1,0 +1,8 @@
+<MaterialAsset
+    AssetName="GridMaterial"
+    materialDefinitionName="GridMaterial"
+    originalFilePath="E:/work/Torque3D-Development/My Projects/Development/game/data/testMaps/art/shapes/cube/GridMaterial">
+    <Material
+        Name="GridMaterial"
+        mapTo="GridMaterial"/>
+</MaterialAsset>

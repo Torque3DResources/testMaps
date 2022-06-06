@@ -1,0 +1,16 @@
+<MaterialAsset
+    AssetName="Moon_Mat"
+    materialDefinitionName="Moon_Mat"
+    VersionId="1">
+    <Material
+        Name="Moon_Mat"
+        mapTo="moon_noglow.png"
+        translucent="true">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:moon_noglow_image"
+                VertColor="true"
+                Emissive="true"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

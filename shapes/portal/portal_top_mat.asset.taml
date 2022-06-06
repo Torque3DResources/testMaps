@@ -1,0 +1,15 @@
+<MaterialAsset
+    AssetName="portal_top_mat"
+    materialDefinitionName="portal_top_mat"
+    VersionId="1">
+    <Material
+        Name="portal_top_mat"
+        mapTo="portal_top">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:top_image"
+                NormalMapAsset="testMaps:topnormal_image"
+                Emissive="true"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

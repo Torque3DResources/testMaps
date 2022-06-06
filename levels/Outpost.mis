@@ -1,0 +1,356 @@
+//--- OBJECT WRITE BEGIN ---
+new Scene(OutpostLevel) {
+   isEditing = "1";
+   gameModeName = "DeathMatchGame";
+      Enabled = "1";
+
+   new LevelInfo(theLevelInfo) {
+      visibleDistance = "2000";
+      fogColor = "0.462745 0.698039 0.729412 1";
+      fogDensity = "0.005";
+      fogDensityOffset = "10";
+      fogAtmosphereHeight = "400";
+      canvasClearColor = "233 220 143 255";
+      soundAmbience = "AudioAmbienceDefault";
+         advancedLightmapSupport = "0";
+         desc = "A \'one of everything\' test level that demonstrates lots of stock classes.";
+         LevelName = "Outpost";
+         preview = "data/testMaps/levels/Outpost_preview";
+   };
+   new ScatterSky() {
+      sunScale = "0.972549 0.996078 0.788235 1";
+      flareType = "SunFlareExample";
+      MoonMatAsset = "testMaps:Moon_Glow_Mat";
+      moonLightColor = "0.223529 0.25098 0.333333 1";
+      useNightCubemap = "1";
+      nightCubemap = "nightCubemap";
+      shadowDistance = "400";
+      shadowSoftness = "0.15";
+      fadeStartDistance = "0";
+      position = "-66.5144 26.6041 496.499";
+         mieScattering = "0.0045";
+   };
+   new TimeOfDay() {
+      startTime = "0.1";
+      Time = "0.1";
+      play = "0";
+      nightScale = "3";
+      position = "-182.594 54.5451 536.878";
+   };
+   new CloudLayer() {
+      TextureAsset = "testMaps:clouds_normal_displacement_image";
+      position = "-125.952 58.8947 265.293";
+   };
+   new TerrainBlock(theTerrain) {
+      TerrainAsset = "testMaps:Outpost_0";
+      squareSize = "2";
+      position = "-1024 -1024 179.978";
+         scale = "1 1 1";
+         tile = "0";
+   };
+   new SimGroup(PlayerDropPoints) {
+         Enabled = "1";
+
+      new SpawnSphere() {
+         radius = "1";
+         sphereWeight = "1";
+         indoorWeight = "1";
+         outdoorWeight = "1";
+         dataBlock = "SpawnSphereMarker";
+         position = "0 0 241.772";
+            Enabled = "1";
+            homingCount = "0";
+            lockCount = "0";
+      };
+   };
+   new WaterPlane() {
+      baseColor = "45 108 171 255";
+      waveDir[0] = "0 1";
+      waveDir[1] = "0.707 0.707";
+      waveDir[2] = "0.5 0.86";
+      waveSpeed[0] = "1";
+      waveSpeed[1] = "1";
+      waveSpeed[2] = "1";
+      waveMagnitude[0] = "0.2";
+      waveMagnitude[1] = "0.2";
+      waveMagnitude[2] = "0.2";
+      RippleTexAsset = "Core_Rendering:ripple_image";
+      rippleDir[0] = "0 1";
+      rippleDir[1] = "0.707 0.707";
+      rippleDir[2] = "0.5 0.86";
+      rippleSpeed[0] = "0.065";
+      rippleSpeed[1] = "0.09";
+      rippleSpeed[2] = "0.04";
+      rippleTexScale[0] = "7.14 7.14";
+      rippleTexScale[1] = "6.25 12.5";
+      rippleTexScale[2] = "50 50";
+      overallRippleMagnitude = "1";
+      FoamTexAsset = "Core_Rendering:foam_image";
+      DepthGradientTexAsset = "Core_Rendering:depthcolor_ramp_image";
+      position = "0 0 238.69";
+   };
+   new GroundCover(g1) {
+      MaterialAsset = "testMaps:grass1";
+      dissolveRadius = "100";
+      maxElements = "100000";
+      layer[0] = "testMaps:dirt_grass";
+      probability[0] = "1";
+      maxClumpCount[0] = "2";
+      position = "-21.5457 82.0435 449.083";
+   };
+   new GroundCover(g2) {
+      MaterialAsset = "testMaps:plant2";
+      dissolveRadius = "100";
+      seed = "2";
+      maxElements = "100000";
+      layer[0] = "testMaps:grassy";
+      probability[0] = "1";
+      maxClumpCount[0] = "2";
+      position = "12.8117 0 241.462";
+   };
+   new GroundCover(g3) {
+      MaterialAsset = "testMaps:grass1";
+      dissolveRadius = "100";
+      seed = "3";
+      maxElements = "100000";
+      layer[0] = "testMaps:dirt_grass";
+      probability[0] = "1";
+      maxClumpCount[0] = "2";
+      position = "-21.5457 82.0435 449.083";
+   };
+   new GroundCover(g4) {
+      MaterialAsset = "testMaps:Weed01";
+      dissolveRadius = "100";
+      seed = "4";
+      maxElements = "5000";
+      layer[0] = "testMaps:sandy";
+      probability[0] = "1";
+      maxClumpCount[0] = "2";
+      position = "-30.6167 167.702 653.717";
+   };
+   new GroundCover(g5) {
+      MaterialAsset = "testMaps:TallGrass";
+      dissolveRadius = "100";
+      maxElements = "5000";
+      layer[0] = "testMaps:grassy_dry";
+      probability[0] = "1";
+      maxClumpCount[0] = "2";
+      position = "62 58 659";
+   };
+   new DecalRoad() {
+      MaterialAsset = "Core_GameObjects:DefaultDecalRoadMaterial";
+      position = "9.80889 2.39879 240.942";
+
+      Node = "9.808894 2.398789 240.942383 10.000000";
+      Node = "19.435331 -12.021607 242.012695 10.000000";
+      Node = "51.340595 -31.241543 242.855469 10.000000";
+      Node = "73.327950 -36.401802 244.145020 10.000000";
+      Node = "88.747749 -36.281593 242.743652 10.000000";
+      Node = "99.256721 -36.545666 242.833008 10.000000";
+      Node = "111.722069 -37.935364 242.774414 10.000000";
+      Node = "125.051414 -46.665359 241.201172 10.000000";
+      Node = "135.392502 -62.546097 240.647461 10.000000";
+      Node = "147.920288 -81.505074 241.236816 10.000000";
+      Node = "154.947601 -108.118645 239.935059 10.000000";
+      Node = "165.949829 -113.423088 242.946289 10.000000";
+      Node = "175.869278 -122.958076 246.488770 10.000000";
+      Node = "174.005676 -133.564606 247.382813 10.000000";
+      Node = "161.754974 -147.751358 244.036133 10.000000";
+      Node = "148.839752 -154.680801 239.870117 10.000000";
+      Node = "137.597839 -158.807571 242.396484 10.000000";
+      Node = "121.395180 -164.599747 242.321289 10.000000";
+      Node = "107.988640 -168.540009 240.083984 10.000000";
+      Node = "91.170845 -166.981232 241.412109 10.000000";
+      Node = "74.749481 -167.035095 241.031738 10.000000";
+      Node = "58.921535 -166.261856 240.727539 10.000000";
+      Node = "45.656979 -164.615738 240.228027 10.000000";
+      Node = "33.351269 -160.648788 240.955566 10.000000";
+      Node = "20.763161 -155.455353 241.927734 10.000000";
+      Node = "6.109464 -148.071213 241.165039 10.000000";
+      Node = "-8.478178 -141.377396 241.548828 10.000000";
+      Node = "-20.484320 -137.246552 241.660156 10.000000";
+      Node = "-31.985313 -133.914383 241.726563 10.000000";
+      Node = "-37.365936 -131.465881 240.782227 10.000000";
+   };
+   new MeshRoad() {
+      TopMaterialAsset = "Core_GameObjects:DefaultRoadMaterialTop";
+      BottomMaterialAsset = "Core_GameObjects:DefaultRoadMaterialOther";
+      SideMaterialAsset = "Core_GameObjects:DefaultRoadMaterialOther";
+      position = "-37.0747 -131.611 241.008";
+
+      Node = "-37.0747 -131.611 241.008 10 5 0 0 1";
+      Node = "-46.5522 -126.509 241.261 10 1 0 0 1";
+      Node = "-64.5763 -114.011 241.266 10 1 0 0 1";
+      Node = "-76.7738 -105.161 241.264 10 5 0 0 1";
+      Node = "-83.4952 -95.8972 241.263 10 5 0 0 1";
+      Node = "-90.0231 -85.4595 241.264 10 1 0 0 1";
+      Node = "-126.295 -31.1648 241.263 10 1 0 0 1";
+      Node = "-130.845 -23.7569 241.263 10 1 0 0 1";
+
+      ProfileNode = "0.000000 0.000000 0 0";
+      ProfileNode = "0.000000 -5.000000 0 2";
+   };
+   new DecalRoad() {
+      MaterialAsset = "Core_GameObjects:DefaultDecalRoadMaterial";
+      position = "-130.65 -23.9889 240.977";
+
+      Node = "-130.650162 -23.988914 240.977051 10.000000";
+      Node = "-135.118286 -18.524910 241.336426 10.000000";
+      Node = "-145.521835 -13.748994 241.743164 10.000000";
+      Node = "-182.085999 -0.641886 246.494141 10.000000";
+      Node = "-182.439651 22.376331 246.258789 10.000000";
+      Node = "-170.779953 46.080372 249.054199 10.000000";
+      Node = "-153.401840 65.100060 250.877930 10.000000";
+      Node = "-126.537048 61.379917 249.727051 10.000000";
+      Node = "-93.901245 66.011063 248.522949 10.000000";
+      Node = "-76.734924 68.635735 252.627930 10.000000";
+      Node = "-66.973053 64.809494 252.790039 10.000000";
+      Node = "-51.694069 55.059582 253.915527 10.000000";
+      Node = "-45.866165 50.427311 254.302246 10.000000";
+      Node = "-41.049664 46.311405 253.332031 10.000000";
+   };
+   new MeshRoad() {
+      TopMaterialAsset = "Core_GameObjects:DefaultRoadMaterialTop";
+      BottomMaterialAsset = "Core_GameObjects:DefaultRoadMaterialOther";
+      SideMaterialAsset = "Core_GameObjects:DefaultRoadMaterialOther";
+      position = "-41.7054 46.9005 253.598";
+
+      Node = "-41.7054 46.9005 253.598 10 5 -0.0955467 -0.111315 0.989181";
+      Node = "-36.1458 42.8452 254.174 10 1 -0.047903 -0.055809 0.997292";
+      Node = "-30.8174 37.6188 253.983 10 1 0 0 1";
+      Node = "-18.3331 29.2615 251.817 10 1 0 0 1";
+      Node = "-15.6041 27.3196 251.121 10 20 0 0 1";
+      Node = "-12.6183 24.8304 250.138 10 1 0 0 1";
+      Node = "1.97645 12.7545 244.672 10 1 0 0 1";
+      Node = "8.09555 5.41249 242.162 10 1 0 0 1";
+      Node = "13.7057 -5.98533 240.41 10 1 0 0 1";
+
+      ProfileNode = "0.000000 0.000000 0 0";
+      ProfileNode = "0.000000 -5.000000 0 2";
+   };
+   new Forest(theForest) {
+      dataFile = "data/testMaps/levels/Outpost.forest";
+   };
+   new WheeledVehicle() {
+      dataBlock = "CheetahCar";
+      position = "29.8935 -39.73 244.411";
+      rotation = "0.282259 -0.955164 -0.0893933 1.74849";
+      persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
+         leftBrakeLight = "18249";
+         mountable = "1";
+         rightBrakeLight = "18248";
+   };
+   new TSStatic() {
+      ShapeAsset = "testMaps:rock1_shape";
+      allowPlayerStep = "1";
+      position = "16.9991 -25.9715 240.76";
+   };
+   new TSStatic() {
+      ShapeAsset = "testMaps:rock2_shape";
+      allowPlayerStep = "1";
+      position = "39.7956 -43.2913 238.099";
+   };
+   new TSStatic() {
+      ShapeAsset = "testMaps:rock2_shape";
+      allowPlayerStep = "1";
+      position = "-2.17366 -10.0803 233.761";
+   };
+   new TSStatic() {
+      ShapeAsset = "testMaps:rock3_shape";
+      allowPlayerStep = "1";
+      position = "-56.0141 31.2388 261.771";
+      rotation = "0 1 0 180";
+   };
+   new Precipitation() {
+      boxWidth = "100";
+      dropSize = "0.2";
+      splashSize = "0.2";
+      dataBlock = "HeavyRain";
+      position = "-68.4306 70.1859 262.98";
+   };
+   new PointLight() {
+      radius = "25";
+      color = "1 0.721569 0 1";
+      brightness = "5";
+      animate = "1";
+      animationType = "FireLightAnim";
+      attenuationRatio = "0 0.5 0.1";
+      shadowType = "DualParaboloidSinglePass";
+      texSize = "512";
+      overDarkFactor = "2000 1000 500 100";
+      shadowDistance = "400";
+      shadowSoftness = "0.15";
+      fadeStartDistance = "0";
+      position = "-52.9507 31.6944 258.435";
+         lastSplitTerrainOnly = "0";
+         logWeight = "0.91";
+         numSplits = "1";
+   };
+   new ParticleEmitterNode() {
+      emitter = "EmberEmitter";
+      dataBlock = "EmberNode";
+      position = "-53.0636 31.7743 257.986";
+   };
+   new ParticleEmitterNode() {
+      emitter = "FireEmitter";
+      dataBlock = "EmberNode";
+      position = "-53.0636 31.7743 257.986";
+   };
+   new TSStatic() {
+      ShapeAsset = "testMaps:station01";
+      collisionType = "Visible Mesh";
+      decalType = "Visible Mesh";
+      allowPlayerStep = "1";
+      position = "-118.394 34.2259 246.05";
+   };
+   new PhysicalZone() {
+      gravityMod = "-1";
+      position = "-75.81 34.2165 245.552";
+      scale = "4.70489 4.32539 16.1481";
+   };
+   new AITurretShape() {
+      respawn = "1";
+      static = "1";
+      dataBlock = "AITurret";
+      position = "-140.592 28.5721 245.631";
+      rotation = "0 0 1 111.009";
+         entranceThread = "-1";
+         invAITurretAmmo = "10000";
+         invAITurretHead = "1";
+         inventoryArray = "18217";
+         mountable = "0";
+   };
+   new SimGroup(CameraBookmarks) {
+
+      new CameraBookmark() {
+         dataBlock = "CameraBookmarkMarker";
+         position = "-54.2205 -122.766 257.705";
+         rotation = "-0.0597204 -0.269509 0.961144 204.046";
+         internalName = "NewCamera_0";
+      };
+      new CameraBookmark() {
+         dataBlock = "CameraBookmarkMarker";
+         position = "-48.0151 -90.5681 272.547";
+         rotation = "-0.0406335 -0.246727 0.968233 198.12";
+         internalName = "NewCamera_1";
+      };
+   };
+   new TSStatic() {
+      ShapeAsset = "testMaps:defaulttree";
+      allowPlayerStep = "1";
+      position = "-57.5817 -139.689 238.213";
+      scale = "3 3 3";
+   };
+   new PhysicalZone() {
+      gravityMod = "0.5";
+      appliedForce = "-2500 0 0";
+      position = "-79.5161 34.0702 259.951";
+      scale = "11.8676 3.54503 7.79052";
+   };
+   new Skylight() {
+      position = "53.0937 -46.4291 244.723";
+      persistentId = "89fbb184-e5da-11ec-802a-8f53c1d57025";
+         reflectionPath = "data/testMaps/levels/Outpost/probes/";
+   };
+};
+//--- OBJECT WRITE END ---

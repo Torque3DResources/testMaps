@@ -1,0 +1,16 @@
+<LevelAsset
+    AssetName="Outpost"
+    LevelFile="@assetFile=Outpost.mis"
+    LevelName="Outpost"
+    PostFXPresetFile="@assetFile=data/testMaps/levels/Outpost.postfxpreset.tscript"
+    ForestFile="@assetFile=Outpost.forest"
+    previewImageAsset0="@asset=testMaps:Outpost_preview_image"
+    previewImageAsset1="@asset=testMaps:Outpost_preview_image"
+    previewImageAsset2="@asset=testMaps:Outpost_preview_image"
+    staticObjectAssetDependency0="@asset=testMaps:Outpost_0"
+    staticObjectAssetDependency1="@asset=testMaps:rock1_shape"
+    staticObjectAssetDependency2="@asset=testMaps:rock2_shape"
+    staticObjectAssetDependency3="@asset=testMaps:rock3_shape"
+    staticObjectAssetDependency4="@asset=testMaps:station01"
+    staticObjectAssetDependency5="@asset=testMaps:defaulttree"
+    VersionId="1"/>

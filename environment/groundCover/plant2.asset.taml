@@ -1,0 +1,16 @@
+<MaterialAsset
+    AssetName="plant2"
+    materialDefinitionName="plant2"
+    VersionId="1">
+    <Material
+        Name="plant2"
+        mapTo="plant2"
+        alphaTest="true"
+        alphaRef="13"
+        originalAssetName="plant2">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:plant2_image"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>
