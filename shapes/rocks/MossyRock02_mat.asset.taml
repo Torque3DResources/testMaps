@@ -1,0 +1,15 @@
+<MaterialAsset
+    AssetName="MossyRock02_mat"
+    materialDefinitionName="MossyRock02_mat"
+    imageMap0="@asset=testMaps:MossyRock02_image"
+    imageMap1="@asset=testMaps:MossyRock02_n_image">
+    <Material
+        Name="MossyRock02_mat"
+        mapTo="MossyRock02">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:MossyRock02_image"
+                NormalMapAsset="testMaps:MossyRock02_n_image"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

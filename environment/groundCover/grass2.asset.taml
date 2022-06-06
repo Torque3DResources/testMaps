@@ -1,0 +1,16 @@
+<MaterialAsset
+    AssetName="grass2"
+    materialDefinitionName="grass2"
+    VersionId="1">
+    <Material
+        Name="grass2"
+        mapTo="grass2"
+        alphaTest="true"
+        alphaRef="120"
+        originalAssetName="grass2">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:grass2_image"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

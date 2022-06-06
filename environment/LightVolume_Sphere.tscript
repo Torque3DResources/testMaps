@@ -1,0 +1,8 @@
+
+singleton TSShapeConstructor(LightVolume_SphereDAE)
+{
+   baseShapeAsset = "testMaps:LightVolume_Sphere";
+   lodType = "TrailingNumber";
+   neverImport = "env*";
+   loadLights = "0";
+};

@@ -1,0 +1,7 @@
+<MaterialAsset
+    AssetName="rock2"
+    materialDefinitionName="rock2">
+    <Material
+        Name="rock2"
+        mapTo="rock2"/>
+</MaterialAsset>

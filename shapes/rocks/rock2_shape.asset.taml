@@ -1,0 +1,5 @@
+<ShapeAsset
+    AssetName="rock2_shape"
+    fileName="@assetFile=rock2.dts"
+    constuctorFileName="@assetFile=rock2.tscript"
+    materialSlot0="@asset=testMaps:rock2"/>

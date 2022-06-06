@@ -1,0 +1,4 @@
+<ImageAsset
+    AssetName="rock2_n_image"
+    imageFile="@assetFile=rock2_n.jpg"
+    imageType="Normal"/>

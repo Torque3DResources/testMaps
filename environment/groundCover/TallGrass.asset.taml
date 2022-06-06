@@ -1,0 +1,15 @@
+<MaterialAsset
+    AssetName="TallGrass"
+    materialDefinitionName="TallGrass"
+    VersionId="1">
+    <Material
+        Name="TallGrass"
+        mapTo="TallGrass"
+        alphaTest="true"
+        originalAssetName="TallGrass">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:TallGrass_image"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

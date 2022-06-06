@@ -1,0 +1,5 @@
+<ShapeAsset
+    AssetName="boulder_shape"
+    fileName="@assetFile=boulder.dts"
+    constuctorFileName="@assetFile=boulder.tscript"
+    materialSlot0="@asset=testMaps:MossyRock02_mat"/>

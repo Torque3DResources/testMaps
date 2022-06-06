@@ -1,0 +1,13 @@
+<MaterialAsset
+    AssetName="rocks_rock2"
+    materialDefinitionName="rocks_rock2">
+    <Material
+        Name="rocks_rock2"
+        mapTo="rock2">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:rock2_image"
+                NormalMapAsset="testMaps:rock2_n_image"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

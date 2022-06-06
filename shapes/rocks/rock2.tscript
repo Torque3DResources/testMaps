@@ -1,0 +1,12 @@
+
+singleton TSShapeConstructor(rock2dts)
+{
+   baseShapeAsset = "testMaps:rock2_shape";
+   singleDetailSize = "0";
+   neverImportMat = "DefaultMaterial	ColorEffect*";
+   flipUVCoords = "0";
+   JoinIdenticalVerts = "0";
+   reverseWindingOrder = "0";
+   removeRedundantMats = "0";
+   animFPS = "2";
+};
