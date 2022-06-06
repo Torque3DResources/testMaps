@@ -1,0 +1,72 @@
+
+// The general flow of a gane - server's creation, loading and hosting clients, and then destruction is as follows:
+
+// First, a client will always create a server in the event that they want to host a single player
+// game. Torque3D treats even single player connections as a soft multiplayer game, with some stuff
+// in the networking short-circuited to sidestep around lag and packet transmission times.
+
+// initServer() is called, loading the default server scripts.
+// After that, if this is a dedicated server session, initDedicated() is called, otherwise initClient is called
+// to prep a playable client session.
+
+// When a local game is started - a listen server - via calling StartGame() a server is created and then the client is
+// connected to it via createAndConnectToLocalServer().
+
+function testMaps::onCreate( %this )
+{
+}
+
+function testMaps::onDestroy( %this )
+{
+}
+
+function testMaps::initServer(%this)
+{
+   %this.queueExec("./scripts/server/cheetah");
+   %this.queueExec("./scripts/server/teleporter");
+   %this.queueExec("./scripts/server/triggers");
+   %this.queueExec("./scripts/server/vehicle");
+   %this.queueExec("./scripts/server/vehicleWheeled");
+   %this.queueExec("./scripts/server/VolumetricFog");
+   %this.queueExec("./scripts/server/physicsShape");
+}
+
+function testMaps::onCreateGameServer(%this)
+{
+   %this.registerDatablock("./datablocks/sounds");
+   %this.registerDatablock("./datablocks/environment");
+   %this.registerDatablock("./datablocks/lights");
+   
+   %this.registerDatablock("./scripts/managedData/managedForestItemData");
+   %this.registerDatablock("./scripts/managedData/managedForestBrushData");
+   %this.registerDatablock("./scripts/managedData/managedDecalData");
+   %this.registerDatablock("./scripts/managedData/managedParticleData");
+   %this.registerDatablock("./scripts/managedData/managedParticleEmitterData");
+   
+   %this.registerDatablock("./datablocks/rigidShape");
+   %this.registerDatablock("./datablocks/teleporter");
+   
+   %this.registerDatablock("./datablocks/triggers");
+   
+   %this.registerDatablock("./datablocks/vehicles/cheetahCar");
+   
+   
+   if(physicsPluginPresent())
+      %this.registerDatablock("./datablocks/physics");
+}
+
+function testMaps::onDestroyGameServer(%this)
+{
+}
+
+function testMaps::initClient(%this)
+{
+}
+
+function testMaps::onCreateClientConnection(%this)
+{
+}
+
+function testMaps::onDestroyClientConnection(%this)
+{
+}

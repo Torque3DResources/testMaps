@@ -1,0 +1,33 @@
+<TerrainMaterialAsset
+    AssetName="grassy_dry"
+    materialDefinitionName="grassy_dry"
+    VersionId="1">
+    <TerrainMaterial
+        Name="grassy_dry"
+        DiffuseMapAsset="testMaps:grassy_dry_image"
+        diffuseSize="200"
+        NormalMapAsset="testMaps:grassy_dry_n_image"
+        blendHeightBase="-0.417"
+        DetailMapAsset="testMaps:grassy_dry_d_image"
+        detailSize="10"
+        internalName="testMaps:grassy_dry"
+        detailBrightness="1"
+        Enabled="1"
+        isManaged="1"
+        originalAssetName="grassy_dry"/>
+    <Material
+        Name="TerrainFX_grassy_dry"
+        mapTo="testMaps:grassy_dry"
+        showDust="true"
+        footstepSoundId="0"
+        impactSoundId="0"
+        materialTag0="Terrain"
+        terrainMaterials="1">
+        <Material.EffectColors>
+            <EffectColor
+                EffectColor="0.42 0.42 0 1"/>
+            <EffectColor
+                EffectColor="0.42 0.42 0 1"/>
+        </Material.EffectColors>
+    </Material>
+</TerrainMaterialAsset>

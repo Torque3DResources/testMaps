@@ -1,0 +1,15 @@
+<ModuleDefinition
+	ModuleId="testMaps"
+	VersionId="1"
+	Description="test Map samples."
+	ScriptFile="testMaps"
+	CreateFunction="onCreate"
+	DestroyFunction="onDestroy"
+	Group="Game"
+    Dependencies="UI=1">
+	<DeclaredAssets
+        canSave="true"
+        canSaveDynamicFields="true"
+        Extension="asset.taml"
+        Recurse="true" />
+</ModuleDefinition>

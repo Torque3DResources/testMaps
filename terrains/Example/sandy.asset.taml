@@ -1,0 +1,32 @@
+<TerrainMaterialAsset
+    AssetName="sandy"
+    materialDefinitionName="sandy"
+    VersionId="1">
+    <TerrainMaterial
+        Name="sandy"
+        DiffuseMapAsset="testMaps:sandy_image"
+        diffuseSize="200"
+        NormalMapAsset="testMaps:sandy_n_image"
+        DetailMapAsset="testMaps:sandy_d_image"
+        detailSize="10"
+        internalName="testMaps:sandy"
+        detailBrightness="1"
+        Enabled="1"
+        isManaged="1"
+        originalAssetName="sandy"/>
+    <Material
+        Name="TerrainFX_sandy"
+        mapTo="testMaps:sandy"
+        showDust="true"
+        footstepSoundId="0"
+        impactSoundId="0"
+        materialTag0="Terrain"
+        terrainMaterials="1">
+        <Material.EffectColors>
+            <EffectColor
+                EffectColor="0.42 0.42 0 1"/>
+            <EffectColor
+                EffectColor="0.42 0.42 0 1"/>
+        </Material.EffectColors>
+    </Material>
+</TerrainMaterialAsset>

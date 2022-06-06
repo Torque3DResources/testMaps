@@ -1,0 +1,33 @@
+<TerrainMaterialAsset
+    AssetName="dirt_grass"
+    materialDefinitionName="dirt_grass"
+    VersionId="1">
+    <TerrainMaterial
+        Name="dirt_grass"
+        DiffuseMapAsset="testMaps:dirt_grass_image"
+        diffuseSize="200"
+        NormalMapAsset="testMaps:dirt_grass_n_image"
+        blendHeightBase="0.266"
+        DetailMapAsset="testMaps:dirt_grass_d_image"
+        detailSize="10"
+        internalName="testMaps:dirt_grass"
+        detailBrightness="1"
+        Enabled="1"
+        isManaged="1"
+        originalAssetName="dirt_grass"/>
+    <Material
+        Name="TerrainFX_dirt_grass"
+        mapTo="testMaps:dirt_grass"
+        showDust="true"
+        footstepSoundId="0"
+        impactSoundId="0"
+        materialTag0="Terrain"
+        terrainMaterials="1">
+        <Material.EffectColors>
+            <EffectColor
+                EffectColor="0.42 0.42 0 1"/>
+            <EffectColor
+                EffectColor="0.42 0.42 0 1"/>
+        </Material.EffectColors>
+    </Material>
+</TerrainMaterialAsset>

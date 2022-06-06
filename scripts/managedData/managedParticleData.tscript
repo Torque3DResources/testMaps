@@ -1,0 +1,167 @@
+//-----------------------------------------------------------------------------
+// Copyright (c) 2012 GarageGames, LLC
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+// sell copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+// IN THE SOFTWARE.
+//-----------------------------------------------------------------------------
+
+// This is the default save location for any Particle datablocks created in the
+// Particle Editor (this script is executed from onServerCreated())
+
+// Smoke
+datablock ParticleData(Smoke)
+{
+   textureAsset          = "testMaps:smoke_image";
+   dragCoefficient      = 0.3;
+   gravityCoefficient   = -0.2;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 3000;
+   lifetimeVarianceMS   = 250;
+   useInvAlpha          = true;
+   spinRandomMin        = -30.0;
+   spinRandomMax        = 30.0;
+
+   sizes[0]      = 1.5;
+   sizes[1]      = 2.75;
+   sizes[2]      = 6.5;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+
+// Ember
+datablock ParticleData(EmberParticle)
+{
+   textureAsset          = "testMaps:ember_image";
+   dragCoefficient      = 0.0;
+   windCoefficient      = 0.0;
+   gravityCoefficient   = -0.05;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 5000;
+   lifetimeVarianceMS   = 0;
+   useInvAlpha          = false;
+   spinRandomMin        = -90.0;
+   spinRandomMax        = 90.0;
+   spinSpeed            = 1;
+
+   colors[0]     = "1.000000 0.800000 0.000000 0.800000";
+   colors[1]     = "1.000000 0.700000 0.000000 0.800000";
+   colors[2]     = "1.000000 0.000000 0.000000 0.200000";
+
+   sizes[0]      = 0.05;
+   sizes[1]      = 0.1;
+   sizes[2]      = 0.05;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+// Fire
+datablock ParticleData(FireParticle)
+{
+   textureAsset          = "testMaps:fire_image";
+   dragCoefficient      = 0.0;
+   windCoefficient      = 0.0;
+   gravityCoefficient   = "-0.051282";   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 5000;
+   lifetimeVarianceMS   = 1000;
+   useInvAlpha          = false;
+   spinRandomMin        = -90.0;
+   spinRandomMax        = 90.0;
+   spinSpeed            = 1.0;
+
+   colors[0]     = "0.19685 0.19685 0 0.19685";
+   colors[1]     = "0.598425 0.19685 0 0.19685";
+   colors[2]     = "0.401575 0 0 0.102362";
+   colors[3]     = "0.102362 0.0393701 0 0.299213";
+
+   sizes[0]      = "0.499733";
+   sizes[1]      = "4.00015";
+   sizes[2]      = "5.00038";
+   sizes[3]      = "5.99985";
+
+   times[0]      = 0.0;
+   times[1]      = "0.101961";
+   times[2]      = 0.2;
+   times[3]      = "0.301961";
+   colors[4] = "0.102362 0.0393701 0 0.299213";
+   colors[5] = "0.102362 0.0393701 0 0.299213";
+   colors[6] = "0.102362 0.0393701 0 0.299213";
+   colors[7] = "0.102362 0.0393701 0 0.299213";
+   sizes[4] = "5.99985";
+   sizes[5] = "5.99985";
+   sizes[6] = "5.99985";
+   sizes[7] = "5.99985";
+   times[4] = "0.301961";
+   times[5] = "0.301961";
+   times[6] = "0.301961";
+   times[7] = "0.301961";
+};
+// Torch Fire
+datablock ParticleData(TorchFire1)
+{
+   textureAsset          = "testMaps:smoke_image";
+   dragCoefficient      = 0.0;
+   gravityCoefficient   = -0.3;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 500;
+   lifetimeVarianceMS   = 250;
+   useInvAlpha          = false;
+   spinRandomMin        = -30.0;
+   spinRandomMax        = 30.0;
+   spinSpeed            = 1;
+
+   colors[0]     = "0.6 0.6 0.0 0.1";
+   colors[1]     = "0.8 0.6 0.0 0.1";
+   colors[2]     = "0.0 0.0 0.0 0.1";
+
+   sizes[0]      = 0.5;
+   sizes[1]      = 0.5;
+   sizes[2]      = 2.4;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
+datablock ParticleData(TorchFire2)
+{
+   textureAsset          = "testMaps:smoke_image";
+   dragCoefficient      = 0.0;
+   gravityCoefficient   = -0.5;   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 800;
+   lifetimeVarianceMS   = 150;
+   useInvAlpha          = false;
+   spinRandomMin        = -30.0;
+   spinRandomMax        = 30.0;
+   spinSpeed            = 1;
+
+   colors[0]     = "0.8 0.6 0.0 0.1";
+   colors[1]     = "0.6 0.6 0.0 0.1";
+   colors[2]     = "0.0 0.0 0.0 0.1";
+
+   sizes[0]      = 0.3;
+   sizes[1]      = 0.3;
+   sizes[2]      = 0.3;
+
+   times[0]      = 0.0;
+   times[1]      = 0.5;
+   times[2]      = 1.0;
+};
