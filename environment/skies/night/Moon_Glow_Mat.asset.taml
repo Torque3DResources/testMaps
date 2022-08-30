@@ -5,7 +5,8 @@
     <Material
         Name="Moon_Glow_Mat"
         mapTo="moon_wglow.png"
-        translucent="true">
+        translucent="true"
+        translucentBlendOp="LerpAlpha">
         <Material.Stages>
             <Stages_beginarray
                 DiffuseMapAsset="testMaps:moon_wglow_image"
