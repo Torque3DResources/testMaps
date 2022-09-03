@@ -9,6 +9,7 @@
         originalAssetName="Weed01">
         <Material.Stages>
             <Stages_beginarray
+                DiffuseColor="0.715694 0.708376 0.708376 1"
                 DiffuseMapAsset="testMaps:Weed01_image"/>
         </Material.Stages>
     </Material>

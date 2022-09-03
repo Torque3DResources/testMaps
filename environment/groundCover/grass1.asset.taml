@@ -5,16 +5,14 @@
     <Material
         Name="grass1"
         mapTo="grass1"
+        castShadows="false"
         alphaTest="true"
-        alphaRef="93"
+        alphaRef="115"
         originalAssetName="grass1">
         <Material.Stages>
             <Stages_beginarray
+                DiffuseColor="0.715694 0.401978 0.396755 1"
                 DiffuseMapAsset="testMaps:grass1_image"/>
         </Material.Stages>
-        <Material.EffectColors>
-            <EffectColor
-                EffectColor="1 1 1 1"/>
-        </Material.EffectColors>
     </Material>
 </MaterialAsset>
