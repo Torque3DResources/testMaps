@@ -9,6 +9,7 @@
         originalAssetName="TallGrass">
         <Material.Stages>
             <Stages_beginarray
+                DiffuseColor="0.760525 0.752942 0.752942 1"
                 DiffuseMapAsset="testMaps:TallGrass_image"/>
         </Material.Stages>
     </Material>

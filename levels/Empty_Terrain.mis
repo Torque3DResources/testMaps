@@ -6,10 +6,9 @@ new Scene(EmptyTerrainLevel) {
 
    new LevelInfo(theLevelInfo) {
       visibleDistance = "2000";
-      fogColor = "1 1 0.6 1";
-      fogDensity = "0.001";
-      fogDensityOffset = "10";
-      fogAtmosphereHeight = "100";
+      fogColor = "0.913 0.694 0.597 1";
+      fogDensity = "0.005";
+      fogAtmosphereHeight = "320";
       canvasClearColor = "233 220 143 255";
       soundAmbience = "AudioAmbienceDefault";
          advancedLightmapSupport = "0";
@@ -18,13 +17,19 @@ new Scene(EmptyTerrainLevel) {
          preview = "data/testMaps/levels/Empty Terrain_preview";
    };
    new ScatterSky() {
-      skyBrightness = "30";
-      sunScale = "1 1 0.8 1";
-      ambientScale = "0.5 0.5 0.4 1";
-      exposure = "0.85";
-      azimuth = "84";
-      elevation = "54";
+      skyBrightness = "35";
+      sunSize = "2";
+      rayleighScattering = "0.0045";
+      sunScale = "0.991102 0.715694 0.423268 1";
+      ambientScale = "0.184475 0.223228 0.38643 1";
+      fogScale = "0.913099 0.693872 0.597202 1";
+      exposure = "2";
+      azimuth = "15";
+      elevation = "25";
+      brightness = "6";
+      flareType = "SunFlareExample3";
       moonScale = "0.3";
+      texSize = "2048";
       overDarkFactor = "3000 2000 1000 250";
       shadowDistance = "400";
       shadowSoftness = "0.25";
@@ -61,6 +66,15 @@ new Scene(EmptyTerrainLevel) {
       position = "181.562 73.8898 273.01";
       persistentId = "806d86d9-e70e-11e9-b257-effec2306e84";
          reflectionPath = "data/testMaps/levels/Empty Terrain/probes/";
+   };
+   new SimGroup(CameraBookmarks) {
+
+      new CameraBookmark() {
+         dataBlock = "CameraBookmarkMarker";
+         position = "8.98913 -35.8186 247.309";
+         rotation = "-0.265545 0.0670975 0.961761 29.4408";
+         internalName = "NewCamera_0";
+      };
    };
 };
 //--- OBJECT WRITE END ---

@@ -6,8 +6,8 @@ new Scene(OutpostLevel) {
 
    new LevelInfo(theLevelInfo) {
       visibleDistance = "2000";
-      fogColor = "0.462745 0.698039 0.729412 1";
-      fogDensity = "0.005";
+      fogColor = "0.610496 0.665387 0.871367 1";
+      fogDensity = "0.004";
       fogDensityOffset = "10";
       fogAtmosphereHeight = "400";
       canvasClearColor = "233 220 143 255";
@@ -18,31 +18,39 @@ new Scene(OutpostLevel) {
          preview = "data/testMaps/levels/Outpost_preview";
    };
    new ScatterSky() {
-      sunScale = "0.972549 0.996078 0.788235 1";
+      skyBrightness = "18";
+      rayleighScattering = "0.0065";
+      sunScale = "0.814847 0.456411 0.337164 1";
+      fogScale = "0.61 0.665 0.871 1";
+      brightness = "10";
       flareType = "SunFlareExample";
+      nightColor = "0.124772 0.124772 0.391573 1";
+      nightFogColor = "0.122139 0.138432 0.381326 1";
       MoonMatAsset = "testMaps:Moon_Glow_Mat";
-      moonLightColor = "0.223529 0.25098 0.333333 1";
-      useNightCubemap = "1";
+      moonLightColor = "0.235 0.227 0.973 1";
       nightCubemap = "nightCubemap";
+      texSize = "2048";
       shadowDistance = "400";
-      shadowSoftness = "0.15";
+      shadowSoftness = "0.5";
       fadeStartDistance = "0";
       position = "-66.5144 26.6041 496.499";
          mieScattering = "0.0045";
    };
    new TimeOfDay() {
-      startTime = "0.1";
-      Time = "0.1";
-      play = "1";
-      nightScale = "3";
+      startTime = "0.09";
+      Time = "0.09";
+      play = "0";
+      nightScale = "1";
       position = "-182.594 54.5451 536.878";
    };
    new CloudLayer() {
       TextureAsset = "testMaps:clouds_normal_displacement_image";
+      windSpeed = "0.3";
       position = "-125.952 58.8947 265.293";
    };
    new TerrainBlock(theTerrain) {
       TerrainAsset = "testMaps:Outpost_0";
+      castShadows = "0";
       squareSize = "2";
       position = "-1024 -1024 179.978";
          scale = "1 1 1";
@@ -64,7 +72,10 @@ new Scene(OutpostLevel) {
       };
    };
    new WaterPlane() {
-      baseColor = "45 108 171 255";
+      baseColor = "12 12 46 255";
+      fresnelBias = "0.35";
+      fresnelPower = "5";
+      specularPower = "150";
       waveDir[0] = "0 1";
       waveDir[1] = "0.707 0.707";
       waveDir[2] = "0.5 0.86";
@@ -86,7 +97,16 @@ new Scene(OutpostLevel) {
       rippleTexScale[2] = "50 50";
       overallRippleMagnitude = "1";
       FoamTexAsset = "Core_Rendering:foam_image";
+      overallFoamOpacity = "2";
+      foamMaxDepth = "15";
+      cubemap = "BlankSkyCubemap";
+      reflectivity = "0.65";
+      waterFogDensity = "0.095";
+      wetDepth = "1";
+      wetDarkening = "0.1";
       DepthGradientTexAsset = "Core_Rendering:depthcolor_ramp_image";
+      depthGradientMax = "100";
+      clarity = "0.2";
       position = "0 0 238.69";
    };
    new GroundCover(g1) {
@@ -154,7 +174,7 @@ new Scene(OutpostLevel) {
       Node = "154.947601 -108.118645 239.935059 10.000000";
       Node = "165.949829 -113.423088 242.946289 10.000000";
       Node = "175.869278 -122.958076 246.488770 10.000000";
-      Node = "174.005676 -133.564606 247.382813 10.000000";
+      Node = "174.005676 -133.564606 247.382812 10.000000";
       Node = "161.754974 -147.751358 244.036133 10.000000";
       Node = "148.839752 -154.680801 239.870117 10.000000";
       Node = "137.597839 -158.807571 242.396484 10.000000";
@@ -169,7 +189,7 @@ new Scene(OutpostLevel) {
       Node = "6.109464 -148.071213 241.165039 10.000000";
       Node = "-8.478178 -141.377396 241.548828 10.000000";
       Node = "-20.484320 -137.246552 241.660156 10.000000";
-      Node = "-31.985313 -133.914383 241.726563 10.000000";
+      Node = "-31.985313 -133.914383 241.726562 10.000000";
       Node = "-37.365936 -131.465881 240.782227 10.000000";
    };
    new MeshRoad() {
@@ -233,12 +253,12 @@ new Scene(OutpostLevel) {
    };
    new WheeledVehicle() {
       dataBlock = "CheetahCar";
-      position = "29.8935 -39.73 244.411";
-      rotation = "0.282259 -0.955164 -0.0893933 1.74849";
+      position = "29.9029 -39.7282 244.41";
+      rotation = "0.283293 -0.953821 -0.0998586 1.75964";
       persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
-         leftBrakeLight = "18249";
+         leftBrakeLight = "27020";
          mountable = "1";
-         rightBrakeLight = "18248";
+         rightBrakeLight = "27019";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock1_shape";
@@ -334,6 +354,12 @@ new Scene(OutpostLevel) {
          rotation = "-0.0406335 -0.246727 0.968233 198.12";
          internalName = "NewCamera_1";
       };
+      new CameraBookmark() {
+         dataBlock = "CameraBookmarkMarker";
+         position = "72.5009 -40.4749 249.378";
+         rotation = "-0.00947261 -0.00513137 -0.999942 56.8921";
+         internalName = "NewCamera_2";
+      };
    };
    new TSStatic() {
       ShapeAsset = "testMaps:defaulttree";
@@ -351,6 +377,30 @@ new Scene(OutpostLevel) {
       position = "53.0937 -46.4291 244.723";
       persistentId = "89fbb184-e5da-11ec-802a-8f53c1d57025";
          reflectionPath = "data/testMaps/levels/Outpost/probes/";
+   };
+   new SphereEnvironmentProbe() {
+      position = "-85.6085 34.7367 249.337";
+      persistentId = "f953b8eb-2b98-11ed-9a2b-b6f4dffb8b15";
+   };
+   new SphereEnvironmentProbe() {
+      position = "-85.6085 34.7367 261.599";
+      persistentId = "29ecf605-2b99-11ed-9a2b-b6f4dffb8b15";
+   };
+   new SphereEnvironmentProbe() {
+      position = "-118.454 34.2834 262.066";
+      persistentId = "38a2290b-2b99-11ed-9a2b-b6f4dffb8b15";
+   };
+   new SphereEnvironmentProbe() {
+      position = "-143.323 34.2834 262.066";
+      persistentId = "46c70292-2b99-11ed-9a2b-b6f4dffb8b15";
+   };
+   new SphereEnvironmentProbe() {
+      position = "-150.268 34.2834 262.066";
+      persistentId = "526bac1c-2b99-11ed-9a2b-b6f4dffb8b15";
+   };
+   new SphereEnvironmentProbe() {
+      position = "-150.268 34.2834 251.301";
+      persistentId = "5be8f815-2b99-11ed-9a2b-b6f4dffb8b15";
    };
 };
 //--- OBJECT WRITE END ---
