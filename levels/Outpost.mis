@@ -27,11 +27,12 @@ new Scene(OutpostLevel) {
       nightColor = "0.124772 0.124772 0.391573 1";
       nightFogColor = "0.122139 0.138432 0.381326 1";
       MoonMatAsset = "testMaps:Moon_Glow_Mat";
-      moonLightColor = "0.235 0.227 0.973 1";
+      moonLightColor = "0.3564 0.3564 0.83077 1";
       nightCubemap = "nightCubemap";
       texSize = "2048";
       shadowDistance = "400";
       shadowSoftness = "0.5";
+      logWeight = "0.9";
       fadeStartDistance = "0";
       position = "-66.5144 26.6041 496.499";
          mieScattering = "0.0045";
@@ -65,7 +66,8 @@ new Scene(OutpostLevel) {
          indoorWeight = "1";
          outdoorWeight = "1";
          dataBlock = "SpawnSphereMarker";
-         position = "0 0 241.772";
+         position = "52.8317 -43.4144 245.675";
+         rotation = "0 0 -1 90";
             Enabled = "1";
             homingCount = "0";
             lockCount = "0";
@@ -253,12 +255,12 @@ new Scene(OutpostLevel) {
    };
    new WheeledVehicle() {
       dataBlock = "CheetahCar";
-      position = "29.9029 -39.7282 244.41";
-      rotation = "0.283293 -0.953821 -0.0998586 1.75964";
+      position = "29.9151 -39.7261 244.41";
+      rotation = "0.28071 -0.95215 -0.12088 1.77338";
       persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
-         leftBrakeLight = "27020";
+         leftBrakeLight = "22527";
          mountable = "1";
-         rightBrakeLight = "27019";
+         rightBrakeLight = "22526";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock1_shape";
@@ -337,7 +339,7 @@ new Scene(OutpostLevel) {
          entranceThread = "-1";
          invAITurretAmmo = "10000";
          invAITurretHead = "1";
-         inventoryArray = "18217";
+         inventoryArray = "22539";
          mountable = "0";
    };
    new SimGroup(CameraBookmarks) {
@@ -359,6 +361,18 @@ new Scene(OutpostLevel) {
          position = "72.5009 -40.4749 249.378";
          rotation = "-0.00947261 -0.00513137 -0.999942 56.8921";
          internalName = "NewCamera_2";
+      };
+      new CameraBookmark() {
+         dataBlock = "CameraBookmarkMarker";
+         position = "46.8352 -38.7591 244.674";
+         rotation = "0.18695 0.0563379 -0.980753 34.1609";
+         internalName = "NewCamera_3";
+      };
+      new CameraBookmark() {
+         dataBlock = "CameraBookmarkMarker";
+         position = "46.8352 -38.7591 244.674";
+         rotation = "0.18695 0.0563379 -0.980753 34.1609";
+         internalName = "NewCamera_4";
       };
    };
    new TSStatic() {
