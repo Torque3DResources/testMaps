@@ -255,12 +255,12 @@ new Scene(OutpostLevel) {
    };
    new WheeledVehicle() {
       dataBlock = "CheetahCar";
-      position = "29.9121 -39.7267 244.41";
-      rotation = "0.283468 -0.951923 -0.116138 1.77779";
+      position = "29.9151 -39.7261 244.41";
+      rotation = "0.28071 -0.95215 -0.12088 1.77338";
       persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
-         leftBrakeLight = "25016";
+         leftBrakeLight = "22527";
          mountable = "1";
-         rightBrakeLight = "25015";
+         rightBrakeLight = "22526";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock1_shape";
@@ -339,7 +339,7 @@ new Scene(OutpostLevel) {
          entranceThread = "-1";
          invAITurretAmmo = "10000";
          invAITurretHead = "1";
-         inventoryArray = "25028";
+         inventoryArray = "22539";
          mountable = "0";
    };
    new SimGroup(CameraBookmarks) {
