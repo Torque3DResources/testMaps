@@ -1,1 +1,10 @@
-<LevelAsset canSave="true" canSaveDynamicFields="true" AssetName="EmptyLevel" LevelFile="@assetFile=EmptyLevel.mis" LevelName="EmptyLevel" isSubScene="false" previewImageAsset0="@asset=testMaps:EmptyLevel_preview_image" previewImageAsset1="@asset=testMaps:EmptyLevel_preview_image" previewImageAsset2="@asset=testMaps:EmptyLevel_preview_image" VersionId="1"/>
+<LevelAsset
+    AssetName="EmptyLevel"
+    LevelFile="@assetFile=EmptyLevel.mis"
+    LevelName="EmptyLevel"
+    PostFXPresetFile="@assetFile=data/testMaps/levels/EmptyLevel.postfxpreset.tscript"
+    previewImageAsset0="@asset=testMaps:EmptyLevel_preview_image"
+    previewImageAsset1="@asset=testMaps:EmptyLevel_preview_image"
+    previewImageAsset2="@asset=testMaps:EmptyLevel_preview_image"
+    staticObjectAssetDependency0="@asset=Prototyping:FloorGray"
+    VersionId="1"/>
