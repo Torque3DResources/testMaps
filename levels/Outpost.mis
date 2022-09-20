@@ -38,9 +38,9 @@ new Scene(OutpostLevel) {
          mieScattering = "0.0045";
    };
    new TimeOfDay() {
+      dayLength = "35";
       startTime = "0.09";
-      Time = "0.09";
-      play = "0";
+      Time = "0.314953";
       nightScale = "1";
       position = "-182.594 54.5451 536.878";
    };
@@ -255,12 +255,12 @@ new Scene(OutpostLevel) {
    };
    new WheeledVehicle() {
       dataBlock = "CheetahCar";
-      position = "29.9151 -39.7261 244.41";
-      rotation = "0.28071 -0.95215 -0.12088 1.77338";
+      position = "29.9212 -39.7249 244.41";
+      rotation = "0.27658 -0.952356 -0.128536 1.77073";
       persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
-         leftBrakeLight = "22527";
+         leftBrakeLight = "18279";
          mountable = "1";
-         rightBrakeLight = "22526";
+         rightBrakeLight = "18278";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock1_shape";
@@ -284,9 +284,16 @@ new Scene(OutpostLevel) {
       rotation = "0 1 0 180";
    };
    new Precipitation() {
+      numDrops = "4096";
       boxWidth = "100";
       dropSize = "0.2";
       splashSize = "0.2";
+      useTrueBillboards = "1";
+      useLighting = "1";
+      glowIntensity = "1 1 1 1";
+      reflect = "1";
+      hitPlayers = "1";
+      hitVehicles = "1";
       dataBlock = "HeavyRain";
       position = "-68.4306 70.1859 262.98";
    };
@@ -339,7 +346,7 @@ new Scene(OutpostLevel) {
          entranceThread = "-1";
          invAITurretAmmo = "10000";
          invAITurretHead = "1";
-         inventoryArray = "22539";
+         inventoryArray = "18291";
          mountable = "0";
    };
    new SimGroup(CameraBookmarks) {
