@@ -7,8 +7,6 @@
         DiffuseMapAsset="testMaps:rocky_image"
         diffuseSize="200"
         NormalMapAsset="testMaps:rocky_n_image"
-        blendHeightBase="-0.334"
-        blendHeightContrast="1.25"
         DetailMapAsset="testMaps:rocky_d_image"
         detailSize="10"
         internalName="testMaps:rocky"

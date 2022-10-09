@@ -7,7 +7,6 @@
         DiffuseMapAsset="testMaps:grassy_image"
         diffuseSize="200"
         NormalMapAsset="testMaps:grassy_n_image"
-        blendHeightBase="-0.084"
         DetailMapAsset="testMaps:grassy_d_image"
         detailSize="10"
         internalName="testMaps:grassy"
