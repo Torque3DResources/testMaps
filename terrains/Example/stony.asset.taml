@@ -7,8 +7,6 @@
         DiffuseMapAsset="testMaps:stony_image"
         diffuseSize="200"
         NormalMapAsset="testMaps:stony_n_image"
-        blendHeightBase="0.116"
-        blendHeightContrast="3"
         DetailMapAsset="testMaps:stony_d_image"
         detailSize="10"
         internalName="testMaps:stony"
