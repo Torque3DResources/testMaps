@@ -8,7 +8,8 @@
         diffuseSize="200"
         NormalMapAsset="testMaps:dirt_grass_n_image"
         DetailMapAsset="testMaps:dirt_grass_d_image"
-        detailSize="10"
+        detailSize="4"
+        ORMConfigMapAsset="testMaps:dirt_grass_c_image"
         internalName="testMaps:dirt_grass"
         detailBrightness="1"
         Enabled="1"
@@ -22,10 +23,6 @@
         impactSoundId="0"
         materialTag0="Terrain"
         terrainMaterials="1">
-        <Material.Stages>
-            <Stages_beginarray
-                DiffuseColor="1 1 1 1"/>
-        </Material.Stages>
         <Material.EffectColors>
             <EffectColor
                 EffectColor="0.42 0.42 0 1"/>
