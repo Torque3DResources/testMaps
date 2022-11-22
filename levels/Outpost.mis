@@ -22,7 +22,7 @@ new Scene(OutpostLevel) {
       rayleighScattering = "0.0065";
       sunScale = "0.814847 0.456411 0.337164 1";
       fogScale = "0.61 0.665 0.871 1";
-      brightness = "10";
+      brightness = "2";
       flareType = "SunFlareExample";
       nightColor = "0.124772 0.124772 0.391573 1";
       nightFogColor = "0.122139 0.138432 0.381326 1";

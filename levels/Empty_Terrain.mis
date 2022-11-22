@@ -26,7 +26,7 @@ new Scene(EmptyTerrainLevel) {
       exposure = "2";
       azimuth = "15";
       elevation = "25";
-      brightness = "6";
+      brightness = "2";
       flareType = "SunFlareExample3";
       moonScale = "0.3";
       texSize = "2048";

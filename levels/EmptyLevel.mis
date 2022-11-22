@@ -22,7 +22,7 @@ new Scene(EmptyLevel) {
       sunScale = "0.991102 0.921582 0.83077 1";
       zOffset = "-1000";
       azimuth = "25";
-      brightness = "5";
+      brightness = "2";
       flareType = "LightFlareExample1";
       MoonMatAsset = "Core_Rendering:moon_wglow";
       useNightCubemap = "1";
