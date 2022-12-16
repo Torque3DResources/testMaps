@@ -6,6 +6,7 @@ new Scene(OutpostLevel) {
 
    new LevelInfo(theLevelInfo) {
       visibleDistance = "2000";
+      dampness = "1";
       fogColor = "0.610496 0.665387 0.871367 1";
       fogDensity = "0.004";
       fogDensityOffset = "10";
