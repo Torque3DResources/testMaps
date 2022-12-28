@@ -1,0 +1,15 @@
+singleton CubemapData( DesertSkyCubemap )
+{
+   cubeMapFaceAsset[0] = "testMaps:cubemap_skybox_1_image";
+   cubeMapFaceAsset[1] = "testMaps:cubemap_skybox_2_image";
+   cubeMapFaceAsset[2] = "testMaps:cubemap_skybox_3_image";
+   cubeMapFaceAsset[3] = "testMaps:cubemap_skybox_4_image";
+   cubeMapFaceAsset[4] = "testMaps:cubemap_skybox_5_image";
+   cubeMapFaceAsset[5] = "testMaps:cubemap_skybox_6_image";
+};
+
+singleton Material( DesertSkyMat )
+{
+   cubemap = DesertSkyCubemap;
+   materialTag0 = "Skies";
+};
