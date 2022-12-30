@@ -19,42 +19,6 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 //-----------------------------------------------------------------------------
-
-datablock SFXProfile(cheetahEngine)
-{
-   preload = "1";
-   description = "AudioCloseLoop3D";
-   fileName = "data/testMaps/sound/cheetah/cheetah_engine.ogg";
-};
-
-datablock SFXProfile(cheetahSqueal)
-{
-   preload = "1";
-   description = "AudioDefault3D";
-   fileName = "data/testMaps/sound/cheetah/cheetah_squeal.ogg";
-};
-
-datablock SFXProfile(hardImpact)
-{
-   preload = "1";
-   description = "AudioDefault3D";
-   fileName = "data/testMaps/sound/cheetah/hardImpact.ogg";
-};
-
-datablock SFXProfile(softImpact)
-{
-   preload = "1";
-   description = "AudioDefault3D";
-   fileName = "data/testMaps/sound/cheetah/softImpact.ogg";
-};
-
-datablock SFXProfile(DirtKickup)
-{
-   preload = "1";
-   description = "AudioDefault3D";
-   fileName = "data/testMaps/sound/cheetah/softImpact.ogg";
-};
-
 datablock SFXProfile(CheetahTurretFireSound)
 {
    //filename = "data/testMaps/sound/cheetah/turret_firing.wav";
@@ -65,7 +29,7 @@ datablock SFXProfile(CheetahTurretFireSound)
 
 datablock ParticleData(CheetahTireParticle)
 {
-   textureAsset          = "testMaps:dustParticle_image";
+   textureAsset          = "testMaps:ember_image";
    dragCoefficient      = "1.99902";
    gravityCoefficient   = "-0.100122";
    inheritedVelFactor   = "0.0998043";
@@ -74,14 +38,19 @@ datablock ParticleData(CheetahTireParticle)
    lifetimeVarianceMS   = 400;
    colors[0]            = "0.456693 0.354331 0.259843 1";
    colors[1]            = "0.456693 0.456693 0.354331 0";
-   sizes[0]             = "0.997986";
-   sizes[1]             = "3.99805";
+   sizes[0]             = "0.99794";
+   sizes[1]             = "3.99786";
    sizes[2]             = "1.0";
    sizes[3]             = "1.0";
    times[0]             = "0.0";
    times[1]             = "1";
    times[2]             = "1";
    times[3]             = "1";
+   colors[3] = "White";
+   times[4] = "1";
+   times[5] = "1";
+   times[6] = "1";
+   times[7] = "1";
 };
 
 datablock ParticleEmitterData(CheetahTireEmitter)
@@ -370,12 +339,8 @@ datablock WheeledVehicleData(CheetahCar)
    jetEnergyDrain = 2;
 
    // Sounds
-   engineSoundAsset = "testMaps:cheetahEngine";
-   //squealSoundAsset = "testMaps:cheetahSqueal";
-   softImpactSoundAsset = "testMaps:softImpact";
-   hardImpactSoundAsset = "testMaps:hardImpact";
-
    // Dynamic fields accessed via script
+   
    nameTag = 'Cheetah';
    maxDismountSpeed = 10;
    maxMountSpeed = 5;
@@ -388,4 +353,14 @@ datablock WheeledVehicleData(CheetahCar)
    turretSlot = 1;
    rightBrakeSlot = 2;
    leftBrakeSlot = 3;
+   dragForce = "0.01";   
+   
+   EngineSoundAsset = "testMaps:cheetahEngine";
+   WheelImpactSoundAsset = "testMaps:DirtKickup";
+   SoftImpactSoundAsset = "testMaps:softImpact";
+   HardImpactSoundAsset = "testMaps:hardImpact";
+   squealSoundAsset = "testMaps:cheetahSqueal";
+   
+   dustTrailEmitter = "CheetahTireEmitter";
+   triggerDustHeight = "-0.1";
 };

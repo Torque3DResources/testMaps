@@ -24,8 +24,8 @@ datablock RigidShapeData( BouncingBoulder )
 {	
    category = "RigidShape";
 	
-   shapeAsset = "testMaps:boulder";
-   emap = true;
+   shapeAsset = "testMaps:boulder_shape";
+   emap = 1;
 
    // Rigid Body
    mass = 200;
