@@ -245,18 +245,24 @@ datablock WheeledVehicleTire(CheetahCarTire)
    // are what convert wheel angular velocity into forces that
    // act on the rigid body.
    shapeAsset = "testMaps:wheel";
-   staticFriction = 4.2;
-   kineticFriction = "1";
+   
+   //IMPORTANT NOTE:
+   //this is not friction to be overcome like a physicsshape
+   //this is grip to be applied under those conditions
+   //so flip which needs to be bigger
+   
+   staticFriction =  1;
+   kineticFriction = 4.2;
 
    // Spring that generates lateral tire forces
-   lateralForce = 18000;
-   lateralDamping = 6000;
-   lateralRelaxation = 1;
+   lateralForce = 150000;
+   lateralDamping = 30000;
+   lateralRelaxation = 0.1;
 
    // Spring that generates longitudinal tire forces
-   longitudinalForce = 18000;
-   longitudinalDamping = 4000;
-   longitudinalRelaxation = 1;
+   longitudinalForce = 600;
+   longitudinalDamping = 1600;
+   longitudinalRelaxation = 0.1;
    radius = "0.609998";
 };
 
@@ -267,18 +273,18 @@ datablock WheeledVehicleTire(CheetahCarTireRear)
    // are what convert wheel angular velocity into forces that
    // act on the rigid body.
    shapeAsset = "testMaps:wheelBack";
-   staticFriction = "7.2";
-   kineticFriction = "1";
+   staticFriction =  1;
+   kineticFriction = 7.2;
 
-   // Spring that generates lateral tire forces
-   lateralForce = "19000";
-   lateralDamping = 6000;
+   // Spring that generates lateral tire forces aka turn force
+   lateralForce = 150000;
+   lateralDamping = 30000;
    lateralRelaxation = 1;
 
-   // Spring that generates longitudinal tire forces
-   longitudinalForce = 18000;
-   longitudinalDamping = 4000;
-   longitudinalRelaxation = 1;
+   // Spring that generates longitudinal tire forces aka acceleration forces
+   longitudinalForce = 600;
+   longitudinalDamping = 1600;
+   longitudinalRelaxation = 0.1;
    radius = "0.840293";
 };
 
@@ -288,7 +294,7 @@ datablock WheeledVehicleSpring(CheetahCarSpring)
    length = 0.5;             // Suspension travel
    force = 2800;              // Spring force
    damping = 3600;             // Spring damping
-   antiSwayForce = 3;         // Lateral anti-sway force
+   antiSwayForce = 300;         // Lateral anti-sway force
 };
 
 datablock WheeledVehicleData(CheetahCar)
