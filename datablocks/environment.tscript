@@ -84,7 +84,7 @@ datablock LightningData(DefaultStorm)
    ThunderSoundAsset[2] = "testMaps:ThunderCrash3Sound";
    ThunderSoundAsset[3] = "testMaps:ThunderCrash4Sound";
    
-   strikeTextures[0] = "data/testMaps/art/environment/lightning";
+   strikeTextures[0] = "data/testMaps/environment/lightning.png";
 };
 
 datablock ReflectorDesc( DefaultCubeDesc )
