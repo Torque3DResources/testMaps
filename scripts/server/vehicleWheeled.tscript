@@ -29,7 +29,7 @@
 // make it easier for people to simply drop in new (generic) vehicles.  All that
 // the user needs to create is a set of datablocks for the new wheeled vehicle
 // to use.  This means that no (or little) scripting should be necessary.
-
+/* example onadd for vehicle creation referencing additional datablocks
 function WheeledVehicleData::onAdd(%this, %obj)
 {
    Parent::onAdd(%this, %obj);
@@ -50,7 +50,7 @@ function WheeledVehicleData::onAdd(%this, %obj)
    %obj.setWheelPowered(2, true);
    %obj.setWheelPowered(3, true);
 }
-
+*/
 function WheeledVehicleData::onCollision(%this, %obj, %col, %vec, %speed)
 {
    // Collision with other objects, including items
