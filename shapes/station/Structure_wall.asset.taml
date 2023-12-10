@@ -7,7 +7,9 @@
         mapTo="building01walls">
         <Material.Stages>
             <Stages_beginarray
-                DiffuseMapAsset="testMaps:building01walls_image"/>
+                DiffuseMapAsset="testMaps:building01walls_image"
+                NormalMapAsset="testMaps:building01walls_n_image"
+                ORMConfigMapAsset="testMaps:building01walls_orm_image"/>
         </Material.Stages>
     </Material>
 </MaterialAsset>

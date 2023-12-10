@@ -7,7 +7,9 @@
         mapTo="grid">
         <Material.Stages>
             <Stages_beginarray
-                DiffuseMapAsset="testMaps:station_grid_image"/>
+                DiffuseMapAsset="testMaps:station_grid_image"
+                NormalMapAsset="testMaps:grid_n_image"
+                ORMConfigMapAsset="testMaps:grid_orm_image"/>
         </Material.Stages>
     </Material>
 </MaterialAsset>

@@ -2,12 +2,12 @@
 new Scene(EmptyTerrainLevel) {
    isEditing = "1";
    gameModeName = "DeathMatchGame";
-      Enabled = "1";
+      enabled = "1";
 
    new LevelInfo(theLevelInfo) {
       visibleDistance = "2000";
-      fogColor = "0.913 0.694 0.597 1";
-      fogDensity = "0.005";
+      FogColor = "0.913 0.694 0.597 1";
+      FogDensity = "0.005";
       fogAtmosphereHeight = "320";
       canvasClearColor = "233 220 143 255";
       soundAmbience = "AudioAmbienceDefault";
@@ -43,12 +43,13 @@ new Scene(EmptyTerrainLevel) {
    new TerrainBlock(theTerrain) {
       TerrainAsset = "testMaps:Empty_Terrain_0";
       squareSize = "2";
+      baseTexFormat = "PNG";
       position = "-1024 -1024 179.978";
          scale = "1 1 1";
          tile = "0";
    };
    new SimGroup(PlayerDropPoints) {
-         Enabled = "1";
+         enabled = "1";
 
       new SpawnSphere() {
          radius = "1";
@@ -57,7 +58,8 @@ new Scene(EmptyTerrainLevel) {
          outdoorWeight = "1";
          dataBlock = "SpawnSphereMarker";
          position = "0 0 241.772";
-            Enabled = "1";
+            enabled = "1";
+            firstDataCheck = "1";
             homingCount = "0";
             lockCount = "0";
       };
@@ -74,7 +76,43 @@ new Scene(EmptyTerrainLevel) {
          position = "8.98913 -35.8186 247.309";
          rotation = "-0.265545 0.0670975 0.961761 29.4408";
          internalName = "NewCamera_0";
+            firstDataCheck = "1";
       };
+   };
+   new WaterPlane() {
+      baseColor = "45 108 171 255";
+      waveDir[0] = "0 1";
+      waveDir[1] = "0.707 0.707";
+      waveDir[2] = "0.5 0.86";
+      waveSpeed[0] = "1";
+      waveSpeed[1] = "1";
+      waveSpeed[2] = "1";
+      waveMagnitude[0] = "0.2";
+      waveMagnitude[1] = "0.2";
+      waveMagnitude[2] = "0.2";
+      overallWaveMagnitude = "0";
+      RippleTex = "Core_Rendering:ripple_image";
+      RippleTexAsset = "Core_Rendering:ripple_image";
+      rippleDir[0] = "0 1";
+      rippleDir[1] = "0.707 0.707";
+      rippleDir[2] = "0.5 0.86";
+      rippleSpeed[0] = "0.065";
+      rippleSpeed[1] = "0.09";
+      rippleSpeed[2] = "0.04";
+      rippleTexScale[0] = "7.14 7.14";
+      rippleTexScale[1] = "6.25 12.5";
+      rippleTexScale[2] = "50 50";
+      overallRippleMagnitude = "0";
+      FoamTex = "Core_Rendering:foam_image";
+      FoamTexAsset = "Core_Rendering:foam_image";
+      reflectivity = "1";
+      DepthGradientTex = "Core_Rendering:depthcolor_ramp_image";
+      DepthGradientTexAsset = "Core_Rendering:depthcolor_ramp_image";
+      position = "0 0 240";
+   };
+   new TSStatic() {
+      ShapeAsset = "testMaps:stationExport";
+      position = "-56 12 238";
    };
 };
 //--- OBJECT WRITE END ---

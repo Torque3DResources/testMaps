@@ -1,0 +1,8 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+
+   new TSStatic() {
+      ShapeAsset = "testMaps:station01";
+   };
+};
+//--- OBJECT WRITE END ---

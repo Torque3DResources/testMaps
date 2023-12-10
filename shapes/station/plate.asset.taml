@@ -4,5 +4,12 @@
     originalFilePath="E:/work/Torque3D-Development/My Projects/Development/game/data/testMaps/art/shapes/station/plate">
     <Material
         Name="plate"
-        mapTo="plate"/>
+        mapTo="plate">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:plate_image"
+                NormalMapAsset="testMaps:plate_n_image"
+                ORMConfigMapAsset="testMaps:plate_orm_image"/>
+        </Material.Stages>
+    </Material>
 </MaterialAsset>

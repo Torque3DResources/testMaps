@@ -2,13 +2,13 @@
 new Scene(OutpostLevel) {
    isEditing = "1";
    gameModeName = "DeathMatchGame";
-      Enabled = "1";
+      enabled = "1";
 
    new LevelInfo(theLevelInfo) {
       visibleDistance = "2000";
       dampness = "1";
-      fogColor = "0.610496 0.665387 0.871367 1";
-      fogDensity = "0.004";
+      FogColor = "0.610496 0.665387 0.871367 1";
+      FogDensity = "0.004";
       fogDensityOffset = "10";
       fogAtmosphereHeight = "400";
       canvasClearColor = "233 220 143 255";
@@ -41,7 +41,7 @@ new Scene(OutpostLevel) {
    new TimeOfDay() {
       dayLength = "35";
       startTime = "0.09";
-      Time = "0.314953";
+      time = "0.375885";
       nightScale = "1";
       position = "-182.594 54.5451 536.878";
    };
@@ -59,7 +59,7 @@ new Scene(OutpostLevel) {
          tile = "0";
    };
    new SimGroup(PlayerDropPoints) {
-         Enabled = "1";
+         enabled = "1";
 
       new SpawnSphere() {
          radius = "1";
@@ -69,7 +69,8 @@ new Scene(OutpostLevel) {
          dataBlock = "SpawnSphereMarker";
          position = "52.8317 -43.4144 245.675";
          rotation = "0 0 -1 90";
-            Enabled = "1";
+            enabled = "1";
+            firstDataCheck = "1";
             homingCount = "0";
             lockCount = "0";
       };
@@ -256,8 +257,8 @@ new Scene(OutpostLevel) {
    };
    new WheeledVehicle() {
       dataBlock = "CheetahCar";
-      position = "29.9253 -39.7246 244.403";
-      rotation = "-0.27931 -0.95204 -0.124925 1.78876";
+      position = "29.9249 -39.6962 244.415";
+      rotation = "0.269095 -0.950795 -0.153549 1.78482";
       canSaveDynamicFields = "0";
       persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
    };
@@ -295,6 +296,7 @@ new Scene(OutpostLevel) {
       hitVehicles = "1";
       dataBlock = "HeavyRain";
       position = "-68.4306 70.1859 262.98";
+         firstDataCheck = "1";
    };
    new PointLight() {
       radius = "25";
@@ -318,11 +320,13 @@ new Scene(OutpostLevel) {
       emitter = "EmberEmitter";
       dataBlock = "EmberNode";
       position = "-53.0636 31.7743 257.986";
+         firstDataCheck = "1";
    };
    new ParticleEmitterNode() {
       emitter = "FireEmitter";
       dataBlock = "EmberNode";
       position = "-53.0636 31.7743 257.986";
+         firstDataCheck = "1";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:station01";
@@ -351,30 +355,35 @@ new Scene(OutpostLevel) {
          position = "-54.2205 -122.766 257.705";
          rotation = "-0.0597204 -0.269509 0.961144 204.046";
          internalName = "NewCamera_0";
+            firstDataCheck = "1";
       };
       new CameraBookmark() {
          dataBlock = "CameraBookmarkMarker";
          position = "-48.0151 -90.5681 272.547";
          rotation = "-0.0406335 -0.246727 0.968233 198.12";
          internalName = "NewCamera_1";
+            firstDataCheck = "1";
       };
       new CameraBookmark() {
          dataBlock = "CameraBookmarkMarker";
          position = "72.5009 -40.4749 249.378";
          rotation = "-0.00947261 -0.00513137 -0.999942 56.8921";
          internalName = "NewCamera_2";
+            firstDataCheck = "1";
       };
       new CameraBookmark() {
          dataBlock = "CameraBookmarkMarker";
          position = "46.8352 -38.7591 244.674";
          rotation = "0.18695 0.0563379 -0.980753 34.1609";
          internalName = "NewCamera_3";
+            firstDataCheck = "1";
       };
       new CameraBookmark() {
          dataBlock = "CameraBookmarkMarker";
          position = "46.8352 -38.7591 244.674";
          rotation = "0.18695 0.0563379 -0.980753 34.1609";
          internalName = "NewCamera_4";
+            firstDataCheck = "1";
       };
    };
    new TSStatic() {
@@ -403,11 +412,13 @@ new Scene(OutpostLevel) {
       persistentId = "29ecf605-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
+      canDamp = "1";
       position = "-118.454 34.2834 262.066";
       persistentId = "38a2290b-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
-      position = "-143.323 34.2834 262.066";
+      canDamp = "1";
+      position = "-141.288 34.2834 262.066";
       persistentId = "46c70292-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
@@ -417,6 +428,11 @@ new Scene(OutpostLevel) {
    new SphereEnvironmentProbe() {
       position = "-150.268 34.2834 251.301";
       persistentId = "5be8f815-2b99-11ed-9a2b-b6f4dffb8b15";
+   };
+   new SphereEnvironmentProbe() {
+      canDamp = "1";
+      position = "-95.4341 34.4003 261.599";
+      persistentId = "e5afa4e1-9724-11ee-91db-a953cb527e4b";
    };
 };
 //--- OBJECT WRITE END ---
