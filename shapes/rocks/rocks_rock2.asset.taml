@@ -7,7 +7,8 @@
         <Material.Stages>
             <Stages_beginarray
                 DiffuseMapAsset="testMaps:rock2_image"
-                NormalMapAsset="testMaps:rock2_n_image"/>
+                NormalMapAsset="testMaps:rock2_n_image"
+                ORMConfigMapAsset="testMaps:rock2_orm_image"/>
         </Material.Stages>
     </Material>
 </MaterialAsset>

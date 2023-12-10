@@ -7,13 +7,15 @@
         mapTo="Cheetah_Main"
         translucentBlendOp="None"
         castDynamicShadows="1"
+        originalAssetName="Cheetah_Main"
         specular0="0.9 0.9 0.9 1"
         specularMap0="data/testMaps/art/shapes/Cheetah/Cheetah_S"
         specularPower0="10">
         <Material.Stages>
             <Stages_beginarray
                 DiffuseMapAsset="testMaps:Cheetah_D_image"
-                NormalMapAsset="testMaps:Cheetah_N_image"/>
+                NormalMapAsset="testMaps:Cheetah_N_image"
+                ORMConfigMapAsset="testMaps:Cheetah_ORM_image"/>
         </Material.Stages>
     </Material>
 </MaterialAsset>

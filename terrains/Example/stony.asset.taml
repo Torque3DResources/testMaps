@@ -12,7 +12,7 @@
         ORMConfigMapAsset="testMaps:stony_c_image"
         internalName="testMaps:stony"
         detailBrightness="1"
-        Enabled="1"
+        enabled="1"
         isManaged="1"
         originalAssetName="stony"/>
     <Material
@@ -23,6 +23,10 @@
         impactSoundId="0"
         materialTag0="Terrain"
         terrainMaterials="1">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseColor="White"/>
+        </Material.Stages>
         <Material.EffectColors>
             <EffectColor
                 EffectColor="0.42 0.42 0 1"/>

@@ -12,7 +12,7 @@
         ORMConfigMapAsset="testMaps:rocky_c_image"
         internalName="testMaps:rocky"
         detailBrightness="1"
-        Enabled="1"
+        enabled="1"
         isManaged="1"
         originalAssetName="rocky"/>
     <Material
