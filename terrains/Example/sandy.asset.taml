@@ -4,15 +4,15 @@
     VersionId="1">
     <TerrainMaterial
         Name="sandy"
-        DiffuseMapAsset="testMaps:sandy_image"
+        DiffuseMapAsset="testMaps:Sandy_b_image"
         diffuseSize="200"
         NormalMapAsset="testMaps:sandy_n_image"
         DetailMapAsset="testMaps:sandy_d_image"
-        detailSize="4"
+        detailSize="2"
         ORMConfigMapAsset="testMaps:sandy_c_image"
         internalName="testMaps:sandy"
         detailBrightness="1"
-        Enabled="1"
+        enabled="1"
         isManaged="1"
         originalAssetName="sandy"/>
     <Material
