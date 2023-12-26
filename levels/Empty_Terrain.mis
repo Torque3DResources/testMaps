@@ -16,29 +16,22 @@ new Scene(EmptyTerrainLevel) {
          LevelName = "Empty Terrain";
          preview = "data/testMaps/levels/Empty Terrain_preview";
    };
-   new ScatterSky() {
-      skyBrightness = "35";
-      sunSize = "2";
-      rayleighScattering = "0.0045";
-      sunScale = "0.991102 0.715694 0.423268 1";
-      ambientScale = "0.184475 0.223228 0.38643 1";
-      fogScale = "0.913099 0.693872 0.597202 1";
-      exposure = "2";
-      azimuth = "15";
-      elevation = "25";
-      brightness = "2";
-      flareType = "SunFlareExample3";
-      moonScale = "0.3";
-      texSize = "2048";
-      overDarkFactor = "3000 2000 1000 250";
-      shadowDistance = "400";
-      shadowSoftness = "0.25";
-      logWeight = "0.96";
-      fadeStartDistance = "325";
-         mieScattering = "0.0015";
-         moonTexture = "core/art/skies/night/moon_wglow";
-         moonTint = "0.192157 0.192157 0.192157 1";
-         sunBrightness = "50";
+   new SkyBox(Sky) {
+      MaterialAsset = "testMaps:DesertSkyMat";
+      position = "20.3957 91.8861 518.614";
+   };
+   new Sun() {
+      azimuth = "83";
+      elevation = "51";
+      color = "0.8 0.8 0.8 1";
+      ambient = "0.2 0.2 0.2 1";
+      CoronaMaterial = "Core_Rendering:Corona_Mat";
+      CoronaMaterialAsset = "Core_Rendering:Corona_Mat";
+      coronaScale = "0.25";
+      flareType = "SunFlareExample";
+      flareScale = "5";
+      position = "75.5859 18.9092 306.022";
+         direction = "1 1 -1";
    };
    new TerrainBlock(theTerrain) {
       TerrainAsset = "testMaps:Empty_Terrain_0";
