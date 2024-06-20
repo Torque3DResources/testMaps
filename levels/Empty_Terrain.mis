@@ -57,7 +57,7 @@ new Scene(EmptyTerrainLevel) {
          indoorWeight = "1";
          outdoorWeight = "1";
          dataBlock = "SpawnSphereMarker";
-         position = "0 0 241.772";
+         position = "0 0 241.799";
             enabled = "1";
             firstDataCheck = "1";
             homingCount = "0";
