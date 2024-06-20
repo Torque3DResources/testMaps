@@ -2,7 +2,7 @@
     AssetName="Outpost"
     LevelFile="@assetFile=Outpost.mis"
     LevelName="Outpost"
-    PostFXPresetFile="@assetFile=data/testMaps/levels/Outpost.postfxpreset.tscript"
+    PostFXPresetFile="@assetFile=Outpost.postfxpreset.tscript"
     ForestFile="@assetFile=Outpost.forest"
     previewImageAsset0="@asset=testMaps:Outpost_preview_image"
     previewImageAsset1="@asset=testMaps:Outpost_preview_image"
