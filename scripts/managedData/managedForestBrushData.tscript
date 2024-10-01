@@ -24,7 +24,7 @@
 // the Forest Editor.
 // This script is executed from ForestEditorPlugin::onWorldEditorStartup().
 
-new SimGroup(ForestBrushGroup) {
+new SimGroup(ExampleForestBrushGroup) {
    canSaveDynamicFields = "1";
 
    new ForestBrush() {
