@@ -1,7 +1,7 @@
 //--- OBJECT WRITE BEGIN ---
 new Scene(OutpostLevel) {
    isEditing = "1";
-   gameModeName = "DeathMatchGame";
+   gameModes = "DeathMatchGame";
       enabled = "1";
 
    new LevelInfo(theLevelInfo) {

@@ -1,7 +1,0 @@
-<ShapeAsset
-    AssetName="Cheetah_Body"
-    fileName="@assetFile=Cheetah_Body.DAE"
-    constuctorFileName="@assetFile=Cheetah_Body.tscript"
-    materialSlot0="@asset=testMaps:Cheetah_Cheetah_Main"
-    materialSlot1="@asset=testMaps:Cheetah_TailLights"
-    materialSlot2="@asset=testMaps:Collider"/>

@@ -1,8 +1,8 @@
 //--- OBJECT WRITE BEGIN ---
 new Scene(EmptyTerrainLevel) {
    isEditing = "1";
-   gameModeName = "DeathMatchGame";
-      enabled = "1";
+   enabled = "1";
+   gameModes = "DeathMatchGame";
 
    new LevelInfo(theLevelInfo) {
       visibleDistance = "2000";

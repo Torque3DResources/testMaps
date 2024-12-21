@@ -1,1 +1,0 @@
-<ShapeAsset canSave="true" canSaveDynamicFields="true" AssetName="wheel" fileName="@assetFile=wheel.DAE" constuctorFileName="@assetFile=wheel.tscript" materialSlot0="@asset=testMaps:Cheetah_Cheetah_Main" materialSlot1="@asset=testMaps:Collider"/>
