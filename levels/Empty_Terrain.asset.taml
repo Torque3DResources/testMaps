@@ -8,4 +8,5 @@
     previewImageAsset1="@asset=testMaps:Empty_Terrain_preview_image"
     previewImageAsset2="@asset=testMaps:Empty_Terrain_preview_image"
     staticObjectAssetDependency0="@asset=testMaps:Empty_Terrain_0"
+    gameModesNames="DeathMatchGame;"
     VersionId="1"/>

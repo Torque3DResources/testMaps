@@ -13,4 +13,5 @@
     staticObjectAssetDependency3="@asset=testMaps:rock3_shape"
     staticObjectAssetDependency4="@asset=testMaps:station01"
     staticObjectAssetDependency5="@asset=testMaps:defaulttree"
+    gameModesNames="DeathMatchGame;"
     VersionId="1"/>
