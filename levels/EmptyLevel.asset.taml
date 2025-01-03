@@ -7,4 +7,5 @@
     previewImageAsset1="@asset=testMaps:EmptyLevel_preview_image"
     previewImageAsset2="@asset=testMaps:EmptyLevel_preview_image"
     staticObjectAssetDependency0="@asset=Prototyping:FloorGray"
+    gameModesNames="DeathMatchGame;"
     VersionId="1"/>

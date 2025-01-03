@@ -1,11 +1,7 @@
 //--- OBJECT WRITE BEGIN ---
 new Scene(EmptyLevel) {
    isEditing = "1";
-   gameModeName = "DeathMatchGame";
-      cdTrack = "2";
-      CTF_scoreLimit = "5";
-      Enabled = "1";
-      musicTrack = "lush";
+   gameModes = "DeathMatchGame";
 
    new LevelInfo(theLevelInfo) {
       fogColor = "0.6 0.6 0.7 1";
