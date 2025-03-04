@@ -1,0 +1,10 @@
+<LevelAsset
+    AssetName="racing"
+    LevelFile="@assetFile=racing.subMis"
+    PostFXPresetFile="@assetFile=racing.postfxpreset.tscript"
+    DecalsFile="@assetFile=racing.mis.decals"
+    ForestFile="@assetFile=racing.forest"
+    NavmeshFile="@assetFile=racing.nav"
+    isSubScene="true"
+    gameModesNames="racingGame;"
+    VersionId="1"/>

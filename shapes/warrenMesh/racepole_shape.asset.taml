@@ -1,0 +1,4 @@
+<ShapeAsset
+    AssetName="racepole_shape"
+    fileName="@assetFile=racepole.blend"
+    constuctorFileName="@assetFile=racepole.tscript"/>

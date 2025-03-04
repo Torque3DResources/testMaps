@@ -1,0 +1,9 @@
+<LevelAsset
+    AssetName="WarrenTraps"
+    LevelFile="@assetFile=WarrenTraps.subMis"
+    PostFXPresetFile="@assetFile=WarrenTraps.postfxpreset.tscript"
+    DecalsFile="@assetFile=WarrenTraps.mis.decals"
+    ForestFile="@assetFile=WarrenTraps.forest"
+    NavmeshFile="@assetFile=WarrenTraps.nav"
+    isSubScene="true"
+    VersionId="1"/>

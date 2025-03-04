@@ -1,0 +1,5 @@
+<ShapeAsset
+    AssetName="warrenMesh_racepole_shape"
+    fileName="@assetFile=racepole.dae"
+    constuctorFileName="@assetFile=racepole.tscript"
+    materialSlot0="@asset=testMaps:raceLight_base_mat"/>

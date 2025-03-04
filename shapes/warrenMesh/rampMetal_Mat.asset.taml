@@ -1,0 +1,15 @@
+<MaterialAsset
+    AssetName="rampMetal_Mat"
+    materialDefinitionName="rampMetal_Mat">
+    <Material
+        Name="rampMetal_Mat"
+        mapTo="rampMetal"
+        originalAssetName="rampMetal_Mat">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:rampMetal_a_image"
+                NormalMapAsset="testMaps:rampMetal_n_image"
+                ORMConfigMapAsset="testMaps:rampMetal_orm_image"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

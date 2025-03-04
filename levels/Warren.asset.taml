@@ -1,0 +1,12 @@
+<LevelAsset
+    AssetName="Warren"
+    LevelFile="@assetFile=Warren.mis"
+    LevelName="Warren"
+    PostFXPresetFile="@assetFile=Warren.postfxpreset.tscript"
+    DecalsFile="@assetFile=Warren.mis.decals"
+    ForestFile="@assetFile=Warren.forest"
+    NavmeshFile="@assetFile=Warren.nav"
+    staticObjectAssetDependency0="@asset=testMaps:warrentTerr"
+    staticObjectAssetDependency1="@asset=testMaps:station01"
+    staticObjectAssetDependency2="@asset=testMaps:warrenMesh_shape"
+    VersionId="1"/>

@@ -1,0 +1,17 @@
+<MaterialAsset
+    AssetName="raceLight_yellow_mat"
+    materialDefinitionName="raceLight_yellow_mat">
+    <Material
+        Name="raceLight_yellow_mat"
+        mapTo="raceLight_yellow"
+        originalAssetName="raceLight_yellow_mat">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:warrenMesh_raceLight_a_image"
+                NormalMapAsset="testMaps:raceLight_n_image"
+                ORMConfigMapAsset="testMaps:raceLight_orm_image"
+                GlowMapAsset="testMaps:racelight_e_yellow_image"
+                GlowMul="2"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>
