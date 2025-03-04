@@ -5,6 +5,7 @@
     <Material
         Name="plant2"
         mapTo="plant2"
+        doubleSided="true"
         alphaTest="true"
         alphaRef="13"
         originalAssetName="plant2">

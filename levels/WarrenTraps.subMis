@@ -1,0 +1,556 @@
+
+new SimGroup(trapLayer)
+{
+   maxSize = "1";
+   MinSize = "0.1";
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "-38.6555 270.52 3.598";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesR.prefab";
+      position = "27.1188 316.239 3.598";
+      rotation = "0 0 1 47.1294";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "-11.4397 339.285 3.598";
+      rotation = "0 0 1 35.4454";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "-1.4978 312.768 0.609933";
+      rotation = "0.130783 -0.0562152 -0.989816 6.27088";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "-0.272981 316.967 0.600078";
+      rotation = "0.021756 0.0386607 0.999016 7.97593";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "2.43993 320.363 0.60047";
+      rotation = "0.0338021 0.050944 0.998129 5.99927";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "14.4317 335.773 0.5998";
+      rotation = "0.0758313 0.09211 -0.992857 2.65561";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "18.3936 340.198 0.596162";
+      rotation = "0.0114818 0.00939759 -0.99989 34.3422";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "25.9848 347.23 0.593464";
+      rotation = "0.120823 0.0994579 0.987679 2.29922";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "22.3457 343.82 0.594011";
+      rotation = "0.24012 0.0751608 0.967829 0.953667";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "9.03089 331.414 0.59859";
+      rotation = "0.0847279 0.0957312 0.991795 2.85559";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "-4.83813 306.187 0.59991";
+      rotation = "0.0065285 0.0160871 0.999849 24.7395";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "120.892 381.02 0.599251";
+      rotation = "0.0039768 0.00257571 0.999989 70.5478";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "125.317 381.789 0.598436";
+      rotation = "0.00481087 0.00244146 0.999986 65.1696";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "129.674 381.379 0.599242";
+      rotation = "0.00396777 0.00318732 0.999987 66.1441";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "135.853 381.264 0.601255";
+      rotation = "0.00700558 0.00150641 0.999974 58.5682";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "148.662 380.435 0.596347";
+      rotation = "0.00466859 0.0084722 0.999953 59.6984";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "154.535 379.439 0.599922";
+      rotation = "0.00534206 0.00180617 0.999984 60.0928";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "164.022 376.354 0.599757";
+      rotation = "0.00483021 0.00091283 0.999988 68.7467";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "159.687 378.279 0.597682";
+      rotation = "0.00389611 0.00458532 0.999982 57.5523";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "142.01 380.979 0.600717";
+      rotation = "0.00817987 -0.00369196 0.99996 56.4965";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "113.956 379.835 0.600058";
+      rotation = "0.00577256 0.00312169 0.999978 51.1689";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "231.718 345.707 -1.63804";
+      rotation = "-0.069352 0.0942745 0.993128 181.476";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "243.865 301.666 0.601261";
+      rotation = "0.0038795 -0.000693231 0.999992 115.71";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "240.727 307.614 0.610746";
+      rotation = "-0.00350061 -0.00813593 0.999961 126.09";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "249.863 282.378 0.598346";
+      rotation = "0.00171112 0.0018262 0.999997 139.902";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "23.5202 370.53 4.02465";
+      rotation = "0 0 1 56.8658";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "52.8515 389.202 4.02465";
+      rotation = "0 0 1 65.8291";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "111.366 407.294 4.0247";
+      rotation = "0 0 1 83.7486";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "150.977 404.224 4.0247";
+      rotation = "0 0 1 105.692";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/spikes.prefab";
+      position = "180.997 368.623 0.285567";
+      rotation = "0 0 1 27.5503";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/spikes.prefab";
+      position = "182.866 372.204 0.285567";
+      rotation = "0 0 1 27.5503";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/spikes.prefab";
+      position = "174.635 359.032 0.285566";
+      rotation = "0 0 1 27.5503";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/spikes.prefab";
+      position = "172.948 355.798 0.285566";
+      rotation = "0 0 1 27.5503";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "255.796 326.567 4.0247";
+      rotation = "0 0 1 148.881";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "268.268 295.047 4.0247";
+      rotation = "0 0 1 158.832";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesL.prefab";
+      position = "276.657 249.286 4.0247";
+      rotation = "0 0 1 179.28";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesR.prefab";
+      position = "72.8148 346.786 3.598";
+      rotation = "0 0 1 62.1195";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesR.prefab";
+      position = "95.264 355.372 3.598";
+      rotation = "0 0 1 74.0095";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesR.prefab";
+      position = "169.904 347.873 3.598";
+      rotation = "0 0 1 117.102";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesR.prefab";
+      position = "191.721 334.081 3.598";
+      rotation = "0 0 1 128.054";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesR.prefab";
+      position = "212.569 314.614 4.0247";
+      rotation = "0 0 1 135.569";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "237.671 312.899 0.612012";
+      rotation = "0.000787702 -0.0104479 0.999945 113.934";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "234.292 318.14 0.600002";
+      rotation = "0.00341246 -0.000160387 0.999994 128.952";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new Prefab()
+   {
+      fileName = "data/trapsNTriggers/prefabs/wallSpikesR.prefab";
+      position = "233.893 267.129 4.0247";
+      rotation = "0 0 1 166.957";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "254.819 257.903 0.601349";
+      rotation = "0.00360574 -0.00109201 0.999993 133.865";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "255.033 255.58 0.601211";
+      rotation = "0.00358453 -0.00100249 0.999993 133.39";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "274.372 210.699 0.492264";
+      rotation = "0.00300784 -0.00125211 0.999995 148.352";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "274.835 212.85 0.486888";
+      rotation = "0.00340952 -0.000612664 0.999994 148.754";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "273.347 212.23 0.499218";
+      rotation = "0.00315343 -0.000527265 0.999995 147.982";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "273.821 214.505 0.493681";
+      rotation = "0.00370159 -0.00180807 0.999992 148.378";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "275.283 215.33 0.484639";
+      rotation = "0.00363352 -0.000421963 0.999993 146.723";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "245.117 -68.6834 21.5319";
+      rotation = "0.0606998 -0.0764803 -0.995222 83.0621";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "144.417 -22.47 21.5883";
+      rotation = "-0.00439876 0.0384875 0.99925 189.262";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "290.134 -99.3679 21.5152";
+      rotation = "0.0483298 0.0243336 0.998535 146.5";
+      firstDataCheck = "1";
+      maxSize = "1";
+      MinSize = "0.1";
+   };
+};

@@ -79,6 +79,25 @@ datablock ParticleEmitterData(FireEmitter)
    blendStyle = "ADDITIVE";
    Glow = "1";
 };
+
+datablock ParticleEmitterData(FireGreenEmitter)
+{
+   ejectionPeriodMS = 50;
+   periodVarianceMS = 0;
+
+   ejectionVelocity = 0.55;
+   velocityVariance = 0.00;
+   ejectionOffset   = 1.0;
+
+
+   thetaMin         = 1.0;
+   thetaMax         = 100.0;
+
+   particles        = "FireGreenParticle";
+   blendStyle = "ADDITIVE";
+   Glow = "1";
+};
+
 datablock ParticleEmitterNodeData(FireNode)
 {
    timeMultiple = 1;

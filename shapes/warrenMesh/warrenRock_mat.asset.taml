@@ -1,0 +1,17 @@
+<MaterialAsset
+    AssetName="warrenRock_mat"
+    materialDefinitionName="warrenRock_mat">
+    <Material
+        Name="warrenRock_mat"
+        mapTo="warrenRock"
+        originalAssetName="warrenRock_mat">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:stony_image"
+                NormalMapAsset="testMaps:stony_n_image"
+                ORMConfigMapAsset="testMaps:stony_c_image"
+                DetailMapAsset="testMaps:stony_d_image"
+                DetailScale="1 1"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>

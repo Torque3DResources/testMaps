@@ -1,0 +1,373 @@
+
+new SimGroup()
+{
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock2_shape";
+      skin = "rock2=warrenRock";
+      position = "61.477 -80.3481 -3.54321";
+      rotation = "0 0 -1 83.8325";
+   };
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock1_shape";
+      skin = "rock2=warrenRock";
+      position = "70.7851 -91.2406 -0.330553";
+      rotation = "-0.656353 -0.170716 0.734886 201.642";
+   };
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock3_shape";
+      skin = "rock2=warrenRock";
+      position = "73.3514 -94.7313 -5.94412";
+      rotation = "0 0 1 239.297";
+   };
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock3_shape";
+      skin = "rock2=warrenRock";
+      position = "29.5886 -57.5578 -6.74414";
+      rotation = "0 0 1 239.297";
+   };
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock3_shape";
+      skin = "rock2=warrenRock";
+      position = "331.457 -252.909 14.4109";
+   };
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock3_shape";
+      skin = "rock2=warrenRock";
+      position = "58.6473 -76.4353 -5.94412";
+   };
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock2_shape";
+      skin = "rock2=warrenRock";
+      position = "41.7848 -69.6177 -1.79843";
+      rotation = "0 0 1 72.9864";
+   };
+
+   new TSStatic()
+   {
+      ShapeAsset = "testMaps:rock1_shape";
+      skin = "rock2=warrenRock";
+      position = "47.2709 -70.8397 -0.330553";
+      rotation = "0 0 1 209.159";
+   };
+
+   new SimGroup(startingLights)
+   {
+      maxSize = "1";
+      MinSize = "0.1";
+
+      new TSStatic()
+      {
+         ShapeAsset = "testMaps:warrenMesh_racepole_shape";
+         position = "-10.509 30.2658 -1.31775";
+      };
+
+      new TSStatic()
+      {
+         ShapeAsset = "testMaps:warrenMesh_racepole_shape";
+         position = "11.8841 30.2658 -1.31775";
+      };
+   };
+
+   new SimGroup(racingTriggers)
+   {
+      maxSize = "1";
+      MinSize = "0.1";
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "1.52412 33.6404 -1.14691";
+         scale = "26.3802 7.25841 5.46774";
+         firstDataCheck = "1";
+         order = "0";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "1.92447 140.137 -1.14691";
+         scale = "51.2686 7.25841 5.46774";
+         firstDataCheck = "1";
+         order = "1";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "-10.8833 248.502 0.596246";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "2";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "15.0838 332.83 -2.60346";
+         rotation = "0 0 1 49.2367";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "3";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "82.1069 374.103 -0.0194497";
+         rotation = "0 0 1 71.0714";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "4";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "171.681 374.611 0.504135";
+         rotation = "0 0 1 119.625";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "5";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "245.062 298.103 1.3473";
+         rotation = "0 0 1 151.563";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "6";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "253.832 190.213 -4.01394";
+         rotation = "0 0 1 175.347";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "7";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "336.773 97.3573 -1.36094";
+         rotation = "0 0 1 157.758";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "8";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "346.238 2.58014 -1.23733";
+         rotation = "0 0 1 186.254";
+         scale = "51.2686 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "9";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "344.864 -96.162 -2.63082";
+         rotation = "0 0 1 186.254";
+         scale = "39.8844 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "10";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "350.544 -181.404 14.4817";
+         rotation = "0 0 1 186.254";
+         scale = "23.568 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "11";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "353.694 -247.731 15.3097";
+         rotation = "0 0 1 186.254";
+         scale = "23.568 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "12";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "318.04 -301.878 4.92441";
+         rotation = "0 0 1 224.248";
+         scale = "41.7707 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "13";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "235.094 -297.766 -1.46744";
+         rotation = "0 0 -1 63.1169";
+         scale = "41.7707 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "14";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "194.851 -228.587 -2.24646";
+         rotation = "0 0 -1 44.6686";
+         scale = "41.7707 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "15";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "145.439 -183.782 -6.99964";
+         rotation = "0 0 -1 44.6686";
+         scale = "25.5333 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "16";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "106.03 -152.7 -3.89558";
+         rotation = "0 0 -1 44.6686";
+         scale = "25.5333 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "17";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "55.6863 -98.1463 -4.36319";
+         rotation = "0 0 -1 35.5132";
+         scale = "55.3862 7.25841 14.2182";
+         firstDataCheck = "1";
+         order = "18";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new Trigger()
+      {
+         dataBlock = "RacingTrigger";
+         position = "8.12521 -38.9056 -1.52927";
+         rotation = "0 0 -1 2.81417";
+         scale = "31.299 7.25841 11.0318";
+         firstDataCheck = "1";
+         order = "19";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+   };
+
+   new SimGroup(RaceLine)
+   {
+      maxSize = "1";
+      MinSize = "0.1";
+
+      new SpawnSphere(Racer1)
+      {
+         radius = "1";
+         dataBlock = "SpawnSphereMarker";
+         position = "-6.47544 12.8276 1.14267";
+         firstDataCheck = "1";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new SpawnSphere(Racer2)
+      {
+         radius = "1";
+         dataBlock = "SpawnSphereMarker";
+         position = "-0.405321 12.8276 1.14267";
+         firstDataCheck = "1";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new SpawnSphere(Racer3)
+      {
+         radius = "1";
+         dataBlock = "SpawnSphereMarker";
+         position = "5.57128 12.8276 1.14267";
+         firstDataCheck = "1";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+
+      new SpawnSphere(Racer4)
+      {
+         radius = "1";
+         dataBlock = "SpawnSphereMarker";
+         position = "11.8091 12.8276 1.14267";
+         firstDataCheck = "1";
+         maxSize = "1";
+         MinSize = "0.1";
+      };
+   };
+};

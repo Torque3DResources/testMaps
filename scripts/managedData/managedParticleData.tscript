@@ -114,6 +114,47 @@ datablock ParticleData(FireParticle)
    times[6] = "0.301961";
    times[7] = "0.301961";
 };
+datablock ParticleData(FireGreenParticle)
+{
+   textureAsset          = "testMaps:fireGreen_image";
+   dragCoefficient      = 0.0;
+   windCoefficient      = 0.0;
+   gravityCoefficient   = "-0.051282";   // rises slowly
+   inheritedVelFactor   = 0.00;
+   lifetimeMS           = 5000;
+   lifetimeVarianceMS   = 1000;
+   useInvAlpha          = false;
+   spinRandomMin        = -90.0;
+   spinRandomMax        = 90.0;
+   spinSpeed            = 1.0;
+
+   colors[0]     = "0.19685 0.19685 0 0.19685";
+   colors[1]     = "0.19685 0.598425 0 0.19685";
+   colors[2]     = "0 0.401575 0 0.102362";
+   colors[3]     = "0.0393701 0.102362  0 0.299213";
+
+   sizes[0]      = "0.499733";
+   sizes[1]      = "4.00015";
+   sizes[2]      = "5.00038";
+   sizes[3]      = "5.99985";
+
+   times[0]      = 0.0;
+   times[1]      = "0.101961";
+   times[2]      = 0.2;
+   times[3]      = "0.301961";
+   colors[4] = "0.102362 0.0393701 0 0.299213";
+   colors[5] = "0.102362 0.0393701 0 0.299213";
+   colors[6] = "0.102362 0.0393701 0 0.299213";
+   colors[7] = "0.102362 0.0393701 0 0.299213";
+   sizes[4] = "5.99985";
+   sizes[5] = "5.99985";
+   sizes[6] = "5.99985";
+   sizes[7] = "5.99985";
+   times[4] = "0.301961";
+   times[5] = "0.301961";
+   times[6] = "0.301961";
+   times[7] = "0.301961";
+};
 // Torch Fire
 datablock ParticleData(TorchFire1)
 {

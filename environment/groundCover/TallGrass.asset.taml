@@ -5,12 +5,13 @@
     <Material
         Name="TallGrass"
         mapTo="TallGrass"
+        doubleSided="true"
         alphaTest="true"
         originalAssetName="TallGrass">
         <Material.Stages>
             <Stages_beginarray
-                DiffuseColor="0.760525 0.752942 0.752942 1"
-                DiffuseMapAsset="testMaps:TallGrass_image"/>
+                DiffuseMapAsset="testMaps:TallGrass_image"
+                DiffuseColor="0.760525 0.752942 0.752942 1"/>
         </Material.Stages>
     </Material>
 </MaterialAsset>

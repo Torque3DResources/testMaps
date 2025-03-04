@@ -1,0 +1,6 @@
+<TerrainAsset
+    AssetName="warrentTerr"
+    terrainFile="@assetFile=warrentTerr.ter"
+    genWithNoise="1"
+    resolution="1024"
+    VersionId="1"/>

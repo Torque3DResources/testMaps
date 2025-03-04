@@ -1,0 +1,16 @@
+<MaterialAsset
+    AssetName="raceLight_base_mat"
+    materialDefinitionName="raceLight_base_mat"
+    imageMap0="@asset=testMaps:warrenMesh_raceLight_a_image">
+    <Material
+        Name="raceLight_base_mat"
+        mapTo="raceLight_base"
+        originalAssetName="raceLight_base_mat">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseMapAsset="testMaps:warrenMesh_raceLight_a_image"
+                NormalMapAsset="testMaps:raceLight_n_image"
+                ORMConfigMapAsset="testMaps:raceLight_orm_image"/>
+        </Material.Stages>
+    </Material>
+</MaterialAsset>
