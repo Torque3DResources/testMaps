@@ -17,6 +17,7 @@ new Scene(WarrenLevel) {
    };
    new ScatterSky(DynamicSky) {
       sunScale = "0.991102 0.921582 0.83077 1";
+      ambientScale = "1 1 1 1";
       zOffset = "-3000";
       azimuth = "25";
       brightness = "5";
@@ -5817,7 +5818,7 @@ new Scene(WarrenLevel) {
       MaterialAsset = "testMaps:plant1";
       radius = "500";
       dissolveRadius = "400";
-      maxElements = "2000000";
+      maxElements = "200000";
       layer[0] = "testMaps:grassy_dry";
       probability[0] = "1";
       sizeMax[0] = "3";
@@ -5831,7 +5832,7 @@ new Scene(WarrenLevel) {
       MaterialAsset = "testMaps:Grass";
       radius = "500";
       dissolveRadius = "400";
-      maxElements = "2000000";
+      maxElements = "200000";
       layer[0] = "testMaps:dirt_grass";
       probability[0] = "1";
       sizeMax[0] = "2";
@@ -5846,7 +5847,7 @@ new Scene(WarrenLevel) {
       MaterialAsset = "testMaps:plant2";
       radius = "500";
       dissolveRadius = "400";
-      maxElements = "2000000";
+      maxElements = "200000";
       layer[0] = "testMaps:grassy";
       probability[0] = "1";
       sizeMax[0] = "2";
