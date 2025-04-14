@@ -8,10 +8,16 @@
         <Material.Stages>
             <Stages_beginarray
                 DiffuseMapAsset="testMaps:stony_image"
-                NormalMapAsset="testMaps:stony_n_image"
+                NormalMapAsset="testMaps:flatNorm_image"
                 ORMConfigMapAsset="testMaps:stony_c_image"
                 DetailMapAsset="testMaps:stony_d_image"
-                DetailScale="1 1"/>
+                DetailScale="1 1"
+                DetailNormalMapAsset="testMaps:stony_n_image"
+                DetailNormalMapStrength="0.5"/>
         </Material.Stages>
+        <Material.EffectColors>
+            <EffectColor
+                EffectColor="1 1 1 1"/>
+        </Material.EffectColors>
     </Material>
 </MaterialAsset>
