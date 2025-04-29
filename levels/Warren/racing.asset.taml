@@ -1,4 +1,4 @@
-<LevelAsset
+<SubSceneAsset
     AssetName="racing"
     LevelFile="@assetFile=racing.subMis"
     PostFXPresetFile="@assetFile=racing.postfxpreset.tscript"
