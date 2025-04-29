@@ -105,7 +105,7 @@ new Scene(WarrenLevel) {
    };
    new SubScene(raceLayer) {
       isGlobalLayer = "1";
-      LevelAsset = "testMaps:racing";
+      SubSceneAsset = "testMaps:racing";
       gameModes = "racingGame;";
       position = "164.263 30.2659 1.68225";
       scale = "528.236 771.813 62.2351";
@@ -5874,7 +5874,7 @@ new Scene(WarrenLevel) {
          MinSize = "0.1";
    };
    new SubScene() {
-      LevelAsset = "testMaps:WarrenTraps";
+      SubSceneAsset = "testMaps:WarrenTraps";
       position = "126.509 153.828 8.68308";
       scale = "495.494 763.665 45.2553";
       loadIf = "isObject(trapsNTriggers)";

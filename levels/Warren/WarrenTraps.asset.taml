@@ -1,4 +1,4 @@
-<LevelAsset
+<SubSceneAsset
     AssetName="WarrenTraps"
     LevelFile="@assetFile=WarrenTraps.subMis"
     PostFXPresetFile="@assetFile=WarrenTraps.postfxpreset.tscript"
