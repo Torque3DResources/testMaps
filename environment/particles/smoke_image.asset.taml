@@ -1,0 +1,11 @@
+<ImageAsset
+    AssetName="smoke_image"
+    imageFile="@assetFile=@smoke.png"
+    originalFilePath="data/testMaps/environment/particles/smoke.png">
+    <ImageAsset.ImageMetadata>
+        <ImageInfo
+            ImageWidth="256"
+            ImageHeight="256"
+            ImageDepth="1"/>
+    </ImageAsset.ImageMetadata>
+</ImageAsset>
