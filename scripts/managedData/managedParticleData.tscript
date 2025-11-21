@@ -51,26 +51,42 @@ datablock ParticleData(EmberParticle)
    textureAsset          = "testMaps:ember_image";
    dragCoefficient      = 0.0;
    windCoefficient      = 0.0;
-   gravityCoefficient   = -0.05;   // rises slowly
+   gravityCoefficient   = "-0.1";   // rises slowly
    inheritedVelFactor   = 0.00;
-   lifetimeMS           = 5000;
-   lifetimeVarianceMS   = 0;
+   lifetimeMS           = "2500";
+   lifetimeVarianceMS   = "2499";
    useInvAlpha          = false;
    spinRandomMin        = -90.0;
    spinRandomMax        = 90.0;
    spinSpeed            = 1;
 
    colors[0]     = "1.000000 0.800000 0.000000 0.800000";
-   colors[1]     = "1.000000 0.700000 0.000000 0.800000";
-   colors[2]     = "1.000000 0.000000 0.000000 0.200000";
+   colors[1]     = "0.955105 0 0 0.8";
+   colors[2]     = "0 0 0 0.2";
 
-   sizes[0]      = 0.05;
-   sizes[1]      = 0.1;
-   sizes[2]      = 0.05;
+   sizes[0]      = "0.0503548";
+   sizes[1]      = "0.0999466";
+   sizes[2]      = "0.0503548";
 
    times[0]      = 0.0;
    times[1]      = 0.5;
    times[2]      = 1.0;
+   TextureFile = "data/testMaps/environment/particles/ember.png";
+   times[3] = "1";
+   times[4] = "1";
+   times[5] = "1";
+   times[6] = "1";
+   times[7] = "1";
+   Colors[3] = "1 0 0 0.2";
+   Colors[4] = "1 0 0 0.2";
+   Colors[5] = "1 0 0 0.2";
+   Colors[6] = "1 0 0 0.2";
+   Colors[7] = "1 0 0 0.2";
+   sizes[3] = "0.05";
+   sizes[4] = "0.05";
+   sizes[5] = "0.05";
+   sizes[6] = "0.05";
+   sizes[7] = "0.05";
 };
 // Fire
 datablock ParticleData(FireParticle)
@@ -78,82 +94,85 @@ datablock ParticleData(FireParticle)
    textureAsset          = "testMaps:fire_image";
    dragCoefficient      = 0.0;
    windCoefficient      = 0.0;
-   gravityCoefficient   = "-0.051282";   // rises slowly
+   gravityCoefficient   = "-0.03";
    inheritedVelFactor   = 0.00;
-   lifetimeMS           = 5000;
-   lifetimeVarianceMS   = 1000;
+   lifetimeMS           = "8000";
+   lifetimeVarianceMS   = "0";
    useInvAlpha          = false;
-   spinRandomMin        = -90.0;
-   spinRandomMax        = 90.0;
-   spinSpeed            = 1.0;
+   spinRandomMin        = "-15";
+   spinRandomMax        = "15";
+   spinSpeed            = "1";
 
-   colors[0]     = "0.19685 0.19685 0 0.19685";
-   colors[1]     = "0.598425 0.19685 0 0.19685";
-   colors[2]     = "0.401575 0 0 0.102362";
-   colors[3]     = "0.102362 0.0393701 0 0.299213";
+   colors[0]     = "0.231373 0.231373 0 1";
+   colors[1]     = "0.0627451 0.0156863 0 1";
+   colors[2]     = "0.0745098 0 0 1";
+   colors[3]     = "0.11928 0.116795 0.116795 1";
 
-   sizes[0]      = "0.499733";
-   sizes[1]      = "4.00015";
-   sizes[2]      = "5.00038";
-   sizes[3]      = "5.99985";
+   sizes[0]      = "5.00038";
+   sizes[1]      = "15";
+   sizes[2]      = "10.0004";
+   sizes[3]      = "0";
 
    times[0]      = 0.0;
    times[1]      = "0.101961";
-   times[2]      = 0.2;
-   times[3]      = "0.301961";
-   colors[4] = "0.102362 0.0393701 0 0.299213";
-   colors[5] = "0.102362 0.0393701 0 0.299213";
-   colors[6] = "0.102362 0.0393701 0 0.299213";
-   colors[7] = "0.102362 0.0393701 0 0.299213";
-   sizes[4] = "5.99985";
-   sizes[5] = "5.99985";
-   sizes[6] = "5.99985";
-   sizes[7] = "5.99985";
-   times[4] = "0.301961";
-   times[5] = "0.301961";
-   times[6] = "0.301961";
-   times[7] = "0.301961";
+   times[2]      = "0.8";
+   times[3]      = "1.0";
+   TextureFile = "data/testMaps/environment/particles/fire.png";
+   times[4] = "1";
+   times[5] = "1";
+   times[6] = "1";
+   times[7] = "1";
+   Colors[4] = "0 0 0 1";
+   Colors[5] = "0 0 0 1";
+   Colors[6] = "0 0 0 1";
+   Colors[7] = "0 0 0 1";
+   sizes[4] = "0";
+   sizes[5] = "0";
+   sizes[6] = "0";
+   sizes[7] = "0";
 };
 datablock ParticleData(FireGreenParticle)
 {
    textureAsset          = "testMaps:fireGreen_image";
    dragCoefficient      = 0.0;
    windCoefficient      = 0.0;
-   gravityCoefficient   = "-0.051282";   // rises slowly
+   gravityCoefficient   = "-0.03";
    inheritedVelFactor   = 0.00;
-   lifetimeMS           = 5000;
-   lifetimeVarianceMS   = 1000;
+   lifetimeMS           = "8000";
+   lifetimeVarianceMS   = "0";
    useInvAlpha          = false;
-   spinRandomMin        = -90.0;
-   spinRandomMax        = 90.0;
-   spinSpeed            = 1.0;
+   spinRandomMin        = "-15";
+   spinRandomMax        = "15";
+   spinSpeed            = "1";
 
-   colors[0]     = "0.19685 0.19685 0 0.19685";
-   colors[1]     = "0.19685 0.598425 0 0.19685";
-   colors[2]     = "0 0.401575 0 0.102362";
-   colors[3]     = "0.0393701 0.102362  0 0.299213";
+   colors[0]     = "0.0138762 0.204902 0 1";
+   colors[1]     = "0.00855452 0.0946296 0.000526316 1";
+   colors[2]     = "0.00309598 0.0219809 0 1";
+   colors[3]     = "0.106539 0.106539 0.106539 1";
+   colors[3]     = "0 0 0 1";
 
-   sizes[0]      = "0.499733";
-   sizes[1]      = "4.00015";
-   sizes[2]      = "5.00038";
-   sizes[3]      = "5.99985";
+   sizes[0]      = "5.00038";
+   sizes[1]      = "15";
+   sizes[2]      = "10";
+   sizes[3]      = "0";
 
    times[0]      = 0.0;
    times[1]      = "0.101961";
-   times[2]      = 0.2;
-   times[3]      = "0.301961";
-   colors[4] = "0.102362 0.0393701 0 0.299213";
-   colors[5] = "0.102362 0.0393701 0 0.299213";
-   colors[6] = "0.102362 0.0393701 0 0.299213";
-   colors[7] = "0.102362 0.0393701 0 0.299213";
-   sizes[4] = "5.99985";
-   sizes[5] = "5.99985";
-   sizes[6] = "5.99985";
-   sizes[7] = "5.99985";
-   times[4] = "0.301961";
-   times[5] = "0.301961";
-   times[6] = "0.301961";
-   times[7] = "0.301961";
+   times[2]      = "0.8";
+   times[3]      = "1.0";
+   TextureFile = "data/testMaps/environment/particles/fireGreen.png";
+   times[4] = "1";
+   times[5] = "1";
+   times[6] = "1";
+   times[7] = "1";
+   Colors[4] = "0 0 0 1";
+   Colors[5] = "0 0 0 1";
+   Colors[6] = "0 0 0 1";
+   Colors[7] = "0 0 0 1";
+   sizes[4] = "0";
+   sizes[5] = "0";
+   sizes[6] = "0";
+   sizes[7] = "0";
 };
 // Torch Fire
 datablock ParticleData(TorchFire1)
