@@ -46,16 +46,18 @@ datablock ParticleEmitterData(EmberEmitter)
    ejectionPeriodMS = 100;
    periodVarianceMS = 0;
 
-   ejectionVelocity = 0.75;
+   ejectionVelocity = "0.5";
    velocityVariance = 0.00;
-   ejectionOffset   = 2.0;
+   ejectionOffset   = "0";
 
-   thetaMin         = 1.0;
-   thetaMax         = 100.0;
+   thetaMin         = "89";
+   thetaMax         = "91";
 
    particles        = "EmberParticle";
    blendStyle = "ADDITIVE";
    Glow = "1";
+   ejectionOffsetVariance = "1";
+   phiVariance = "360";
 };
 datablock ParticleEmitterNodeData(EmberNode)
 {
@@ -64,38 +66,42 @@ datablock ParticleEmitterNodeData(EmberNode)
 
 datablock ParticleEmitterData(FireEmitter)
 {
-   ejectionPeriodMS = 50;
-   periodVarianceMS = 0;
+   ejectionPeriodMS = "100";
+   periodVarianceMS = "99";
 
-   ejectionVelocity = 0.55;
+   ejectionVelocity = "0";
    velocityVariance = 0.00;
-   ejectionOffset   = 1.0;
+   ejectionOffset   = "0";
 
 
-   thetaMin         = 1.0;
-   thetaMax         = 100.0;
+   thetaMin         = "0";
+   thetaMax         = "180";
 
    particles        = "FireParticle";
    blendStyle = "ADDITIVE";
    Glow = "1";
+   ejectionOffsetVariance = "0.2";
+   thetaVariance = "1";
 };
 
 datablock ParticleEmitterData(FireGreenEmitter)
 {
-   ejectionPeriodMS = 50;
-   periodVarianceMS = 0;
+   ejectionPeriodMS = "100";
+   periodVarianceMS = "99";
 
-   ejectionVelocity = 0.55;
+   ejectionVelocity = "0";
    velocityVariance = 0.00;
-   ejectionOffset   = 1.0;
+   ejectionOffset   = "0";
 
 
-   thetaMin         = 1.0;
-   thetaMax         = 100.0;
+   thetaMin         = "0";
+   thetaMax         = "180";
 
    particles        = "FireGreenParticle";
    blendStyle = "ADDITIVE";
    Glow = "1";
+   ejectionOffsetVariance = "0.2";
+   thetaVariance = "1";
 };
 
 datablock ParticleEmitterNodeData(FireNode)
