@@ -32,245 +32,254 @@ new SimGroup(trapLayer)
 
    new RigidShape()
    {
+      isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "-1.4978 312.768 0.609933";
-      rotation = "0.130783 -0.0562152 -0.989816 6.27088";
-      firstDataCheck = "1";
+      position = "-1.37298 312.769 -0.0243184";
+      rotation = "0.98311 -0.182925 0.00576899 42.893";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "-0.272981 316.967 0.600078";
-      rotation = "0.021756 0.0386607 0.999016 7.97593";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "2.43993 320.363 0.60047";
-      rotation = "0.0338021 0.050944 0.998129 5.99927";
-      firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "14.4317 335.773 0.5998";
-      rotation = "0.0758313 0.09211 -0.992857 2.65561";
-      firstDataCheck = "1";
+      position = "-0.278159 316.968 0.42434";
+      rotation = "0.0805372 0.00934392 0.996708 8.05625";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "18.3936 340.198 0.596162";
-      rotation = "0.0114818 0.00939759 -0.99989 34.3422";
-      firstDataCheck = "1";
+      position = "2.43685 320.365 0.400468";
+      rotation = "0.0693304 0.101983 0.992367 6.14028";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "25.9848 347.23 0.593464";
-      rotation = "0.120823 0.0994579 0.987679 2.29922";
-      firstDataCheck = "1";
+      position = "14.6213 335.774 -0.206956";
+      rotation = "0.215386 0.975326 0.048469 56.5494";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "22.3457 343.82 0.594011";
-      rotation = "0.24012 0.0751608 0.967829 0.953667";
-      firstDataCheck = "1";
+      position = "18.3944 340.2 0.194995";
+      rotation = "-0.101913 0.528777 -0.84262 41.421";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "9.03089 331.414 0.59859";
-      rotation = "0.0847279 0.0957312 0.991795 2.85559";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "-4.83813 306.187 0.59991";
-      rotation = "0.0065285 0.0160871 0.999849 24.7395";
-      firstDataCheck = "1";
+      position = "26.0836 347.123 -0.182838";
+      rotation = "0.600326 0.798386 0.0467859 54.7676";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "120.892 381.02 0.599251";
-      rotation = "0.0039768 0.00257571 0.999989 70.5478";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "125.317 381.789 0.598436";
-      rotation = "0.00481087 0.00244146 0.999986 65.1696";
-      firstDataCheck = "1";
+      position = "22.3464 343.825 0.37771";
+      rotation = "0.815335 -0.343758 0.465896 2.11739";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "129.674 381.379 0.599242";
-      rotation = "0.00396777 0.00318732 0.999987 66.1441";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "135.853 381.264 0.601255";
-      rotation = "0.00700558 0.00150641 0.999974 58.5682";
-      firstDataCheck = "1";
+      position = "9.10369 331.528 -0.0361429";
+      rotation = "-0.708804 0.700345 0.0843411 49.7467";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "148.662 380.435 0.596347";
-      rotation = "0.00466859 0.0084722 0.999953 59.6984";
-      firstDataCheck = "1";
+      position = "-4.77501 306.342 -1.62147";
+      rotation = "0.00768817 0.0467633 0.998876 21.0234";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "154.535 379.439 0.599922";
-      rotation = "0.00534206 0.00180617 0.999984 60.0928";
-      firstDataCheck = "1";
+      position = "120.718 380.96 -0.0138404";
+      rotation = "0.468627 -0.323515 0.822026 80.7984";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "164.022 376.354 0.599757";
-      rotation = "0.00483021 0.00091283 0.999988 68.7467";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "159.687 378.279 0.597682";
-      rotation = "0.00389611 0.00458532 0.999982 57.5523";
-      firstDataCheck = "1";
+      position = "125.525 381.779 -0.362943";
+      rotation = "-0.192458 0.610202 0.768513 83.6017";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "142.01 380.979 0.600717";
-      rotation = "0.00817987 -0.00369196 0.99996 56.4965";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "113.956 379.835 0.600058";
-      rotation = "0.00577256 0.00312169 0.999978 51.1689";
-      firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "231.718 345.707 -1.63804";
-      rotation = "-0.069352 0.0942745 0.993128 181.476";
-      firstDataCheck = "1";
+      position = "129.821 381.324 -0.193265";
+      rotation = "-0.160343 0.662927 0.731312 81.9638";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "243.865 301.666 0.601261";
-      rotation = "0.0038795 -0.000693231 0.999992 115.71";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "240.727 307.614 0.610746";
-      rotation = "-0.00350061 -0.00813593 0.999961 126.09";
-      firstDataCheck = "1";
+      position = "135.853 381.269 0.40507";
+      rotation = "0.0208342 -0.00423174 0.999774 58.667";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "249.863 282.378 0.598346";
-      rotation = "0.00171112 0.0018262 0.999997 139.902";
-      firstDataCheck = "1";
+      position = "148.667 380.44 0.41415";
+      rotation = "0.0122725 0.00796044 0.999893 59.8039";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "154.572 379.271 -0.132265";
+      rotation = "0.570837 0.407725 0.712675 81.0249";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "164.025 376.358 0.414638";
+      rotation = "0.020338 -0.0104332 0.999739 68.8747";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "159.687 378.285 0.389869";
+      rotation = "0.0288937 0.00553032 0.999567 57.4764";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "141.97 380.988 0.179404";
+      rotation = "0.148431 -0.417946 0.896264 61.0477";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "113.956 379.837 0.413567";
+      rotation = "0.00899397 0.0294942 0.999525 51.2492";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      dataBlock = "boomBarrel";
+      position = "234.139 347.292 -18489.3";
+      rotation = "-0.107911 0.140153 0.984232 178.459";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "243.721 301.526 -0.162416";
+      rotation = "0.516891 0.086412 0.851679 125.041";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "240.722 307.788 -1.63819";
+      rotation = "-0.00240343 -0.045251 0.998973 123.722";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "249.948 282.236 -0.0865562";
+      rotation = "0.0500897 0.480186 0.875735 147.443";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new Prefab()
@@ -419,23 +428,24 @@ new SimGroup(trapLayer)
 
    new RigidShape()
    {
+      isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "237.671 312.899 0.612012";
-      rotation = "0.000787702 -0.0104479 0.999945 113.934";
-      firstDataCheck = "1";
+      position = "237.678 312.887 0.406551";
+      rotation = "-0.114116 -0.131889 0.984674 113.826";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "234.292 318.14 0.600002";
-      rotation = "0.00341246 -0.000160387 0.999994 128.952";
-      firstDataCheck = "1";
+      position = "234.304 318.125 0.203683";
+      rotation = "-0.0201123 0.162433 0.986515 129.561";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new Prefab()
@@ -449,108 +459,111 @@ new SimGroup(trapLayer)
 
    new RigidShape()
    {
+      isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "254.819 257.903 0.601349";
-      rotation = "0.00360574 -0.00109201 0.999993 133.865";
-      firstDataCheck = "1";
+      position = "254.826 257.905 0.384229";
+      rotation = "-0.00929311 -0.0308427 0.999481 133.924";
       maxSize = "1";
       MinSize = "0.1";
-   };
-
-   new RigidShape()
-   {
-      dataBlock = "boomBarrel";
-      position = "255.033 255.58 0.601211";
-      rotation = "0.00358453 -0.00100249 0.999993 133.39";
       firstDataCheck = "1";
-      maxSize = "1";
-      MinSize = "0.1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "274.372 210.699 0.492264";
-      rotation = "0.00300784 -0.00125211 0.999995 148.352";
-      firstDataCheck = "1";
+      position = "255.042 255.586 0.308209";
+      rotation = "-0.0789027 0.00510091 0.996869 133.361";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "274.835 212.85 0.486888";
-      rotation = "0.00340952 -0.000612664 0.999994 148.754";
-      firstDataCheck = "1";
+      position = "274.373 210.698 0.257927";
+      rotation = "-0.0147447 -0.0200455 0.99969 148.498";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "273.347 212.23 0.499218";
-      rotation = "0.00315343 -0.000527265 0.999995 147.982";
-      firstDataCheck = "1";
+      position = "274.665 212.803 -0.623873";
+      rotation = "0.235922 0.166312 0.957435 147.062";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "273.821 214.505 0.493681";
-      rotation = "0.00370159 -0.00180807 0.999992 148.378";
-      firstDataCheck = "1";
+      position = "273.348 212.229 0.269352";
+      rotation = "-0.00636509 -0.0122544 0.999905 148.036";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "275.283 215.33 0.484639";
-      rotation = "0.00363352 -0.000421963 0.999993 146.723";
-      firstDataCheck = "1";
+      position = "273.836 214.469 -1.77893";
+      rotation = "0.00187928 -0.00119124 0.999998 160.026";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "245.117 -68.6834 21.5319";
-      rotation = "0.0606998 -0.0764803 -0.995222 83.0621";
-      firstDataCheck = "1";
+      position = "275.135 215.265 -0.231853";
+      rotation = "0.292867 0.173013 0.94037 147.049";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
       isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "144.417 -22.47 21.5883";
-      rotation = "-0.00439876 0.0384875 0.99925 189.262";
-      firstDataCheck = "1";
+      position = "245.114 -68.6646 21.335";
+      rotation = "0.0515933 0.19906 -0.978628 82.0581";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
    };
 
    new RigidShape()
    {
+      isAtRest = "1";
       dataBlock = "boomBarrel";
-      position = "290.134 -99.3679 21.5152";
-      rotation = "0.0483298 0.0243336 0.998535 146.5";
-      firstDataCheck = "1";
+      position = "144.399 -22.5819 21.0392";
+      rotation = "0.0275188 -0.237732 0.970941 187.843";
       maxSize = "1";
       MinSize = "0.1";
+      firstDataCheck = "1";
+   };
+
+   new RigidShape()
+   {
+      isAtRest = "1";
+      dataBlock = "boomBarrel";
+      position = "290.162 -99.3119 21.3266";
+      rotation = "-0.180405 -0.103237 0.97816 147.872";
+      maxSize = "1";
+      MinSize = "0.1";
+      firstDataCheck = "1";
    };
 };

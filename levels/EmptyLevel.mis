@@ -4,13 +4,14 @@ new Scene(EmptyLevel) {
    gameModes = "DeathMatchGame";
 
    new LevelInfo(theLevelInfo) {
-      fogColor = "0.6 0.6 0.7 1";
+      FogColor = "0.6 0.6 0.7 1";
       fogDensityOffset = "700";
       canvasClearColor = "0 0 0 255";
+      ambientLightBlendCurve = "4.02889e-15 0";
       soundAmbience = "AudioAmbienceDefault";
          advancedLightmapSupport = "0";
          desc0 = "A blank room ready to be populated with Torque objects. Guns, anyone?";
-         Enabled = "1";
+         enabled = "1";
          LevelName = "Blank Room";
          preview = "data/FPSGameplay/levels/EmptyLevel_preview";
    };
@@ -18,7 +19,6 @@ new Scene(EmptyLevel) {
       sunScale = "0.991102 0.921582 0.83077 1";
       zOffset = "-1000";
       azimuth = "25";
-      brightness = "2";
       flareType = "LightFlareExample1";
       MoonMatAsset = "Core_Rendering:moon_wglow";
       useNightCubemap = "1";
@@ -28,6 +28,7 @@ new Scene(EmptyLevel) {
    };
    new CloudLayer(SkyClouds) {
       TextureAsset = "Core_Rendering:clouds_normal_displacement_image";
+      TextureFile = "core/rendering/images/clouds_normal_displacement.png";
       coverage = "0.25";
       windSpeed = "0.5";
       height = "6";
@@ -37,7 +38,7 @@ new Scene(EmptyLevel) {
          reflectionPath = "data/testMaps/levels/EmptyLevel/probes/";
    };
    new SimGroup(PlayerDropPoints) {
-         Enabled = "1";
+         enabled = "1";
 
       new SpawnSphere() {
          radius = "5";
@@ -47,7 +48,7 @@ new Scene(EmptyLevel) {
          dataBlock = "SpawnSphereMarker";
          position = "0 0 2";
          rotation = "0 0 1 90";
-            Enabled = "1";
+            enabled = "1";
             homingCount = "0";
             lockCount = "0";
       };
@@ -56,7 +57,7 @@ new Scene(EmptyLevel) {
       scaleU = "32";
       scaleV = "32";
       MaterialAsset = "Prototyping:FloorGray";
-         Enabled = "1";
+         enabled = "1";
          position = "0 0 0";
          rotation = "1 0 0 0";
          scale = "1 1 1";

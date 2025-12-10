@@ -4,6 +4,7 @@
     LevelName="Outpost"
     PostFXPresetFile="@assetFile=Outpost.postfxpreset.tscript"
     ForestFile="@assetFile=Outpost.forest"
+    gameModesNames="DeathMatchGame"
     previewImageAsset0="@asset=testMaps:Outpost_preview_image"
     previewImageAsset1="@asset=testMaps:Outpost_preview_image"
     previewImageAsset2="@asset=testMaps:Outpost_preview_image"
@@ -13,5 +14,4 @@
     staticObjectAssetDependency3="@asset=testMaps:rock3_shape"
     staticObjectAssetDependency4="@asset=testMaps:station01"
     staticObjectAssetDependency5="@asset=testMaps:defaulttree"
-    gameModesNames="DeathMatchGame;"
     VersionId="1"/>

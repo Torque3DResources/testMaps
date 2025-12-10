@@ -6,9 +6,12 @@ new Scene(WarrenLevel) {
       MinSize = "0.1";
 
    new LevelInfo(theLevelInfo) {
-      FogColor = "0.6 0.6 0.7 1";
-      fogDensityOffset = "700";
+      FogColor = "0.0592535 0.0412441 0.0198832 1";
+      FogDensity = "0.005";
+      fogDensityOffset = "1";
+      fogAtmosphereHeight = "500";
       canvasClearColor = "255 255 255 255";
+      ambientLightBlendCurve = "0 0";
       soundAmbience = "AudioAmbienceDefault";
          enabled = "1";
          LevelName = "Warren";
@@ -16,11 +19,11 @@ new Scene(WarrenLevel) {
          MinSize = "0.1";
    };
    new ScatterSky(DynamicSky) {
-      sunScale = "0.991102 0.921582 0.83077 1";
-      ambientScale = "1 1 1 1";
+      fogScale = "0.0592535 0.0412441 0.0198832 1";
       zOffset = "-3000";
       azimuth = "25";
-      brightness = "5";
+      flareType = "SunFlareExample";
+      flareScale = "5";
       MoonMatAsset = "Core_Rendering:moon_wglow";
       useNightCubemap = "1";
       nightCubemap = "nightCubemap";
@@ -32,6 +35,7 @@ new Scene(WarrenLevel) {
    };
    new CloudLayer(SkyClouds) {
       TextureAsset = "Core_Rendering:clouds_normal_displacement_image";
+      TextureFile = "core/rendering/images/clouds_normal_displacement.png";
       coverage = "0.25";
       windSpeed = "0.5";
       height = "6";
@@ -51,12 +55,14 @@ new Scene(WarrenLevel) {
    };
    new TSStatic() {
       ShapeAsset = "testMaps:station01";
+      ShapeFile = "data/testMaps/shapes/station/station01.dts";
       collisionType = "Visible Mesh";
       decalType = "Visible Mesh";
       position = "-142.014 162.07 42.6209";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:station01";
+      ShapeFile = "data/testMaps/shapes/station/station01.dts";
       collisionType = "Visible Mesh";
       decalType = "Visible Mesh";
       position = "456.52 -249.489 42.4662";
@@ -64,6 +70,7 @@ new Scene(WarrenLevel) {
    };
    new TSStatic() {
       ShapeAsset = "testMaps:warrenMesh_shape";
+      ShapeFile = "data/testMaps/shapes/warrenMesh/warrenMesh.dae";
       collisionType = "Visible Mesh";
       decalType = "Visible Mesh";
       position = "222.768 -359.951 21.4806";
@@ -79,8 +86,8 @@ new Scene(WarrenLevel) {
       waveMagnitude[0] = "0.2";
       waveMagnitude[1] = "0.2";
       waveMagnitude[2] = "0.2";
-      RippleTex = "Core_Rendering:ripple_image";
       RippleTexAsset = "Core_Rendering:ripple_image";
+      RippleTexFile = "core/rendering/images/ripple.dds";
       rippleDir[0] = "0 1";
       rippleDir[1] = "0.707 0.707";
       rippleDir[2] = "0.5 0.86";
@@ -91,17 +98,20 @@ new Scene(WarrenLevel) {
       rippleTexScale[1] = "6.25 12.5";
       rippleTexScale[2] = "50 50";
       overallRippleMagnitude = "1";
-      FoamTex = "Core_Rendering:foam_image";
       FoamTexAsset = "Core_Rendering:foam_image";
+      FoamTexFile = "core/rendering/images/foam.dds";
       foamSpeed[0] = "0.5";
       foamSpeed[1] = "0.5";
       foamMaxDepth = "4";
       foamRippleInfluence = "0.5";
-      DepthGradientTex = "Core_Rendering:depthcolor_ramp_image";
       DepthGradientTexAsset = "Core_Rendering:depthcolor_ramp_image";
+      DepthGradientTexFile = "core/rendering/images/depthcolor_ramp.png";
       position = "0 0 -21";
+         DepthGradientTex = "Core_Rendering:depthcolor_ramp_image";
+         FoamTex = "Core_Rendering:foam_image";
          maxSize = "1";
          MinSize = "0.1";
+         RippleTex = "Core_Rendering:ripple_image";
    };
    new SubScene(raceLayer) {
       isGlobalLayer = "1";
@@ -113,7 +123,7 @@ new Scene(WarrenLevel) {
          MinSize = "0.1";
          result = "0";
    };
-   new SimGroup(flares) {
+   new SimGroup(Flares) {
          maxSize = "1";
          MinSize = "0.1";
 
@@ -5819,6 +5829,7 @@ new Scene(WarrenLevel) {
       radius = "500";
       dissolveRadius = "400";
       maxElements = "200000";
+      LayerAsset[0] = "testMaps:grassy_dry";
       layer[0] = "testMaps:grassy_dry";
       probability[0] = "1";
       sizeMax[0] = "3";
@@ -5833,6 +5844,7 @@ new Scene(WarrenLevel) {
       radius = "500";
       dissolveRadius = "400";
       maxElements = "200000";
+      LayerAsset[0] = "testMaps:dirt_grass";
       layer[0] = "testMaps:dirt_grass";
       probability[0] = "1";
       sizeMax[0] = "2";
@@ -5848,6 +5860,7 @@ new Scene(WarrenLevel) {
       radius = "500";
       dissolveRadius = "400";
       maxElements = "200000";
+      LayerAsset[0] = "testMaps:grassy";
       layer[0] = "testMaps:grassy";
       probability[0] = "1";
       sizeMax[0] = "2";
@@ -5875,12 +5888,12 @@ new Scene(WarrenLevel) {
    };
    new SubScene() {
       SubSceneAsset = "testMaps:WarrenTraps";
+      loadIf = "isObject(trapsNTriggers)";
       position = "126.509 153.828 8.68308";
       scale = "495.494 763.665 45.2553";
-      loadIf = "isObject(trapsNTriggers)";
          maxSize = "1";
          MinSize = "0.1";
-         result = "0";
+         result = "1";
    };
 };
 //--- OBJECT WRITE END ---

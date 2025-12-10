@@ -4,9 +4,9 @@
     LevelName="Empty_Terrain"
     PostFXPresetFile="@assetFile=Empty_Terrain.postfxpreset.tscript"
     ForestFile="@assetFile=Empty_Terrain.forest"
+    gameModesNames="DeathMatchGame"
     previewImageAsset0="@asset=testMaps:Empty_Terrain_preview_image"
     previewImageAsset1="@asset=testMaps:Empty_Terrain_preview_image"
     previewImageAsset2="@asset=testMaps:Empty_Terrain_preview_image"
     staticObjectAssetDependency0="@asset=testMaps:Empty_Terrain_0"
-    gameModesNames="DeathMatchGame;"
     VersionId="1"/>
