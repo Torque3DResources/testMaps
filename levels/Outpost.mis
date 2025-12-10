@@ -12,6 +12,7 @@ new Scene(OutpostLevel) {
       fogDensityOffset = "10";
       fogAtmosphereHeight = "400";
       canvasClearColor = "233 220 143 255";
+      ambientLightBlendCurve = "0 0";
       soundAmbience = "AudioAmbienceDefault";
          advancedLightmapSupport = "0";
          desc = "A \'one of everything\' test level that demonstrates lots of stock classes.";
@@ -23,7 +24,6 @@ new Scene(OutpostLevel) {
       rayleighScattering = "0.0065";
       sunScale = "0.814847 0.456411 0.337164 1";
       fogScale = "0.61 0.665 0.871 1";
-      brightness = "2";
       flareType = "SunFlareExample";
       nightColor = "0.124772 0.124772 0.391573 1";
       nightFogColor = "0.122139 0.138432 0.381326 1";
@@ -41,12 +41,13 @@ new Scene(OutpostLevel) {
    new TimeOfDay() {
       dayLength = "35";
       startTime = "0.09";
-      time = "0.375885";
+      time = "0.180735";
       nightScale = "1";
       position = "-182.594 54.5451 536.878";
    };
    new CloudLayer() {
       TextureAsset = "testMaps:clouds_normal_displacement_image";
+      TextureFile = "data/testMaps/environment/skies/clouds/clouds_normal_displacement.png";
       windSpeed = "0.3";
       position = "-125.952 58.8947 265.293";
    };
@@ -90,6 +91,7 @@ new Scene(OutpostLevel) {
       waveMagnitude[1] = "0.2";
       waveMagnitude[2] = "0.2";
       RippleTexAsset = "Core_Rendering:ripple_image";
+      RippleTexFile = "core/rendering/images/ripple.dds";
       rippleDir[0] = "0 1";
       rippleDir[1] = "0.707 0.707";
       rippleDir[2] = "0.5 0.86";
@@ -101,6 +103,7 @@ new Scene(OutpostLevel) {
       rippleTexScale[2] = "50 50";
       overallRippleMagnitude = "1";
       FoamTexAsset = "Core_Rendering:foam_image";
+      FoamTexFile = "core/rendering/images/foam.dds";
       overallFoamOpacity = "2";
       foamMaxDepth = "15";
       cubemap = "BlankSkyCubemap";
@@ -109,6 +112,7 @@ new Scene(OutpostLevel) {
       wetDepth = "1";
       wetDarkening = "0.1";
       DepthGradientTexAsset = "Core_Rendering:depthcolor_ramp_image";
+      DepthGradientTexFile = "core/rendering/images/depthcolor_ramp.png";
       depthGradientMax = "100";
       clarity = "0.2";
       position = "0 0 238.69";
@@ -117,6 +121,7 @@ new Scene(OutpostLevel) {
       MaterialAsset = "testMaps:grass1";
       dissolveRadius = "100";
       maxElements = "100000";
+      LayerAsset[0] = "testMaps:dirt_grass";
       layer[0] = "testMaps:dirt_grass";
       probability[0] = "1";
       maxClumpCount[0] = "2";
@@ -127,6 +132,7 @@ new Scene(OutpostLevel) {
       dissolveRadius = "100";
       seed = "2";
       maxElements = "100000";
+      LayerAsset[0] = "testMaps:grassy";
       layer[0] = "testMaps:grassy";
       probability[0] = "1";
       maxClumpCount[0] = "2";
@@ -137,6 +143,7 @@ new Scene(OutpostLevel) {
       dissolveRadius = "100";
       seed = "3";
       maxElements = "100000";
+      LayerAsset[0] = "testMaps:dirt_grass";
       layer[0] = "testMaps:dirt_grass";
       probability[0] = "1";
       maxClumpCount[0] = "2";
@@ -147,6 +154,7 @@ new Scene(OutpostLevel) {
       dissolveRadius = "100";
       seed = "4";
       maxElements = "5000";
+      LayerAsset[0] = "testMaps:sandy";
       layer[0] = "testMaps:sandy";
       probability[0] = "1";
       maxClumpCount[0] = "2";
@@ -156,6 +164,7 @@ new Scene(OutpostLevel) {
       MaterialAsset = "testMaps:TallGrass";
       dissolveRadius = "100";
       maxElements = "5000";
+      LayerAsset[0] = "testMaps:grassy_dry";
       layer[0] = "testMaps:grassy_dry";
       probability[0] = "1";
       maxClumpCount[0] = "2";
@@ -256,29 +265,34 @@ new Scene(OutpostLevel) {
       dataFile = "data/testMaps/levels/Outpost.forest";
    };
    new WheeledVehicle() {
+      isAtRest = "1";
       dataBlock = "CheetahCar";
-      position = "29.9249 -39.6962 244.415";
-      rotation = "0.269095 -0.950795 -0.153549 1.78482";
+      position = "29.9287 -39.6726 244.565";
+      rotation = "0.284053 -0.942676 -0.175147 1.86796";
       canSaveDynamicFields = "0";
       persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock1_shape";
+      ShapeFile = "data/testMaps/shapes/rocks/rock1.dts";
       allowPlayerStep = "1";
       position = "16.9991 -25.9715 240.76";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock2_shape";
+      ShapeFile = "data/testMaps/shapes/rocks/rock2.dts";
       allowPlayerStep = "1";
       position = "39.7956 -43.2913 238.099";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock2_shape";
+      ShapeFile = "data/testMaps/shapes/rocks/rock2.dts";
       allowPlayerStep = "1";
       position = "-2.17366 -10.0803 233.761";
    };
    new TSStatic() {
       ShapeAsset = "testMaps:rock3_shape";
+      ShapeFile = "data/testMaps/shapes/rocks/rock3.dts";
       allowPlayerStep = "1";
       position = "-56.0141 31.2388 261.771";
       rotation = "0 1 0 180";
@@ -291,7 +305,7 @@ new Scene(OutpostLevel) {
       useTrueBillboards = "1";
       useLighting = "1";
       glowIntensity = "1 1 1 1";
-      reflect = "1";
+      Reflect = "1";
       hitPlayers = "1";
       hitVehicles = "1";
       dataBlock = "HeavyRain";
@@ -330,6 +344,7 @@ new Scene(OutpostLevel) {
    };
    new TSStatic() {
       ShapeAsset = "testMaps:station01";
+      ShapeFile = "data/testMaps/shapes/station/station01.dts";
       collisionType = "Visible Mesh";
       decalType = "Visible Mesh";
       allowPlayerStep = "1";
@@ -388,6 +403,7 @@ new Scene(OutpostLevel) {
    };
    new TSStatic() {
       ShapeAsset = "testMaps:defaulttree";
+      ShapeFile = "data/testMaps/shapes/trees/defaulttree/defaulttree.DAE";
       allowPlayerStep = "1";
       position = "-57.5817 -139.689 238.213";
       scale = "3 3 3";

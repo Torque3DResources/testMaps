@@ -3,9 +3,9 @@
     LevelFile="@assetFile=EmptyLevel.mis"
     LevelName="EmptyLevel"
     PostFXPresetFile="@assetFile=EmptyLevel.postfxpreset.tscript"
+    gameModesNames="DeathMatchGame"
     previewImageAsset0="@asset=testMaps:EmptyLevel_preview_image"
     previewImageAsset1="@asset=testMaps:EmptyLevel_preview_image"
     previewImageAsset2="@asset=testMaps:EmptyLevel_preview_image"
     staticObjectAssetDependency0="@asset=Prototyping:FloorGray"
-    gameModesNames="DeathMatchGame;"
     VersionId="1"/>
