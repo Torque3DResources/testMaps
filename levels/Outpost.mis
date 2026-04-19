@@ -12,7 +12,6 @@ new Scene(OutpostLevel) {
       fogDensityOffset = "10";
       fogAtmosphereHeight = "400";
       canvasClearColor = "233 220 143 255";
-      ambientLightBlendCurve = "0 0";
       soundAmbience = "AudioAmbienceDefault";
          advancedLightmapSupport = "0";
          desc = "A \'one of everything\' test level that demonstrates lots of stock classes.";
@@ -41,7 +40,8 @@ new Scene(OutpostLevel) {
    new TimeOfDay() {
       dayLength = "35";
       startTime = "0.09";
-      time = "0.180735";
+      time = "0.09";
+      play = "0";
       nightScale = "1";
       position = "-182.594 54.5451 536.878";
    };
@@ -177,16 +177,16 @@ new Scene(OutpostLevel) {
       Node = "9.808894 2.398789 240.942383 10.000000";
       Node = "19.435331 -12.021607 242.012695 10.000000";
       Node = "51.340595 -31.241543 242.855469 10.000000";
-      Node = "73.327950 -36.401802 244.145020 10.000000";
-      Node = "88.747749 -36.281593 242.743652 10.000000";
+      Node = "73.327950 -36.401802 244.144531 10.000000";
+      Node = "88.747749 -36.281593 242.744141 10.000000";
       Node = "99.256721 -36.545666 242.833008 10.000000";
       Node = "111.722069 -37.935364 242.774414 10.000000";
       Node = "125.051414 -46.665359 241.201172 10.000000";
       Node = "135.392502 -62.546097 240.647461 10.000000";
-      Node = "147.920288 -81.505074 241.236816 10.000000";
-      Node = "154.947601 -108.118645 239.935059 10.000000";
+      Node = "147.920288 -81.505074 241.237305 10.000000";
+      Node = "154.947601 -108.118645 239.935547 10.000000";
       Node = "165.949829 -113.423088 242.946289 10.000000";
-      Node = "175.869278 -122.958076 246.488770 10.000000";
+      Node = "175.869278 -122.958076 246.488281 10.000000";
       Node = "174.005676 -133.564606 247.382812 10.000000";
       Node = "161.754974 -147.751358 244.036133 10.000000";
       Node = "148.839752 -154.680801 239.870117 10.000000";
@@ -194,10 +194,10 @@ new Scene(OutpostLevel) {
       Node = "121.395180 -164.599747 242.321289 10.000000";
       Node = "107.988640 -168.540009 240.083984 10.000000";
       Node = "91.170845 -166.981232 241.412109 10.000000";
-      Node = "74.749481 -167.035095 241.031738 10.000000";
+      Node = "74.749481 -167.035095 241.032227 10.000000";
       Node = "58.921535 -166.261856 240.727539 10.000000";
-      Node = "45.656979 -164.615738 240.228027 10.000000";
-      Node = "33.351269 -160.648788 240.955566 10.000000";
+      Node = "45.656979 -164.615738 240.227539 10.000000";
+      Node = "33.351269 -160.648788 240.956055 10.000000";
       Node = "20.763161 -155.455353 241.927734 10.000000";
       Node = "6.109464 -148.071213 241.165039 10.000000";
       Node = "-8.478178 -141.377396 241.548828 10.000000";
@@ -225,21 +225,21 @@ new Scene(OutpostLevel) {
    };
    new DecalRoad() {
       MaterialAsset = "Core_GameObjects:DefaultDecalRoadMaterial";
-      position = "-130.65 -23.9889 240.977";
+      position = "-130.65 -23.9889 240.978";
 
-      Node = "-130.650162 -23.988914 240.977051 10.000000";
-      Node = "-135.118286 -18.524910 241.336426 10.000000";
+      Node = "-130.650162 -23.988914 240.977539 10.000000";
+      Node = "-135.118286 -18.524910 241.335938 10.000000";
       Node = "-145.521835 -13.748994 241.743164 10.000000";
       Node = "-182.085999 -0.641886 246.494141 10.000000";
       Node = "-182.439651 22.376331 246.258789 10.000000";
-      Node = "-170.779953 46.080372 249.054199 10.000000";
+      Node = "-170.779953 46.080372 249.053711 10.000000";
       Node = "-153.401840 65.100060 250.877930 10.000000";
-      Node = "-126.537048 61.379917 249.727051 10.000000";
-      Node = "-93.901245 66.011063 248.522949 10.000000";
+      Node = "-126.537048 61.379917 249.727539 10.000000";
+      Node = "-93.901245 66.011063 248.523438 10.000000";
       Node = "-76.734924 68.635735 252.627930 10.000000";
       Node = "-66.973053 64.809494 252.790039 10.000000";
-      Node = "-51.694069 55.059582 253.915527 10.000000";
-      Node = "-45.866165 50.427311 254.302246 10.000000";
+      Node = "-51.694069 55.059582 253.915039 10.000000";
+      Node = "-45.866165 50.427311 254.302734 10.000000";
       Node = "-41.049664 46.311405 253.332031 10.000000";
    };
    new MeshRoad() {
@@ -267,8 +267,8 @@ new Scene(OutpostLevel) {
    new WheeledVehicle() {
       isAtRest = "1";
       dataBlock = "CheetahCar";
-      position = "29.9287 -39.6726 244.565";
-      rotation = "0.284053 -0.942676 -0.175147 1.86796";
+      position = "30.3051 -38.1815 244.522";
+      rotation = "0.723446 -0.680162 -0.118345 2.94253";
       canSaveDynamicFields = "0";
       persistentId = "fab05691-3175-11e4-978f-ce5dedd0cf27";
    };
@@ -420,11 +420,13 @@ new Scene(OutpostLevel) {
          reflectionPath = "data/testMaps/levels/Outpost/probes/";
    };
    new SphereEnvironmentProbe() {
-      position = "-85.6085 34.7367 249.337";
+      radius = "13";
+      refScale = "13 13 13";
+      position = "-85.7154 34.1588 250.016";
       persistentId = "f953b8eb-2b98-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
-      position = "-85.6085 34.7367 261.599";
+      position = "-85.7154 34.1588 261.185";
       persistentId = "29ecf605-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
@@ -433,22 +435,122 @@ new Scene(OutpostLevel) {
       persistentId = "38a2290b-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
-      canDamp = "1";
-      position = "-141.288 34.2834 262.066";
+      radius = "5";
+      refScale = "5 5 5";
+      position = "-141.288 34.2834 260.835";
       persistentId = "46c70292-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
-      position = "-150.268 34.2834 262.066";
+      radius = "11";
+      refScale = "11 11 11";
+      position = "-150.268 34.2834 264.629";
       persistentId = "526bac1c-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
-      position = "-150.268 34.2834 251.301";
+      radius = "13";
+      refScale = "13 13 13";
+      position = "-150.268 34.2834 252.293";
       persistentId = "5be8f815-2b99-11ed-9a2b-b6f4dffb8b15";
    };
    new SphereEnvironmentProbe() {
-      canDamp = "1";
-      position = "-95.4341 34.4003 261.599";
+      radius = "4";
+      refScale = "4 4 4";
+      position = "-94.5448 34.4003 261.599";
       persistentId = "e5afa4e1-9724-11ee-91db-a953cb527e4b";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "12";
+      refScale = "11 11 11";
+      position = "-150.268 34.2834 258.997";
+      persistentId = "8fc642e8-3c29-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "1";
+      refScale = "12 12 12";
+      position = "-85.7154 34.1588 256.114";
+      persistentId = "5bd3c70d-3c2a-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "9";
+      refScale = "9 9 9";
+      position = "-85.7154 34.1588 266.283";
+      persistentId = "dadede09-3c2a-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "9";
+      refScale = "9 9 9";
+      position = "-85.7154 34.1588 270.724";
+      persistentId = "e88cfdc8-3c2a-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "9";
+      refScale = "9 9 9";
+      position = "-85.7154 34.1588 275.21";
+      persistentId = "393ff2a9-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "9";
+      refScale = "9 9 9";
+      position = "-85.7154 34.1588 279.719";
+      persistentId = "40df2927-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "9";
+      refScale = "9 9 9";
+      position = "-85.7154 34.1588 284.281";
+      persistentId = "48064509-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "9";
+      refScale = "9 9 9";
+      position = "-85.7154 34.1588 288.848";
+      persistentId = "4cdaf497-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new SphereEnvironmentProbe() {
+      radius = "9";
+      refScale = "9 9 9";
+      position = "-85.7154 34.1588 293.328";
+      persistentId = "52eeedf4-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new BoxEnvironmentProbe() {
+      refScale = "7.0779 5.168 15.9137";
+      position = "-76.9 34.1801 253.952";
+      scale = "7.07789 5.16798 15.9137";
+      persistentId = "7003e051-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new BoxEnvironmentProbe() {
+      refScale = "7.0779 5.168 15.9137";
+      position = "-76.9 34.1801 269.176";
+      scale = "7.07789 5.16798 15.9137";
+      persistentId = "994f2bca-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new BoxEnvironmentProbe() {
+      refScale = "7.0779 5.168 15.9137";
+      position = "-76.9 34.1801 278.429";
+      scale = "7.07789 5.16798 15.9137";
+      persistentId = "a4bfa0a9-3c2b-11f1-aef3-90e5c6ce11fd";
+   };
+   new ConvexShape() {
+      MaterialAsset = "Prototyping:ArrowGreen";
+      position = "-73.6679 32.3238 246.522";
+
+      surface = "0 0 0 1 0 0 38.7188 0 0 0 1 1 0 0 0";
+      surface = "0 1 0 0 0 0 -0.5 0 0 0 1 1 0 0 0";
+      surface = "0.707107 0 0 0.707107 0 0.5 19.1094 0 0 0 1 1 0 0 0";
+      surface = "0 0.707107 -0.707107 0 0 -0.5 19.1094 0 0 0 1 1 0 0 0";
+      surface = "0.5 0.5 -0.5 0.5 -0.5 8.10559e-09 19.1092 0 0 0 1 1 0 0 0";
+      surface = "0.5 -0.5 0.5 0.5 0.5 8.10559e-09 19.1092 0 0 0 1 1 0 0 0";
+   };
+   new ConvexShape() {
+      MaterialAsset = "Prototyping:ArrowGreen";
+      position = "-73.6679 36.1209 246.618";
+
+      surface = "0 0 0 1 0 0 38.7188 0 0 0 1 1 0 0 0";
+      surface = "0 1 0 0 0 0 -0.5 0 0 0 1 1 0 0 0";
+      surface = "0.707107 0 0 0.707106 0 0.5 19.1094 0 0 0 1 1 0 0 0";
+      surface = "0 0.707107 -0.707107 0 0 -0.5 19.1094 0 0 0 1 1 0 0 0";
+      surface = "0.5 0.5 -0.5 0.5 -0.5 0 19.1092 0 0 0 1 1 0 0 0";
+      surface = "0.5 -0.5 0.5 0.5 0.5 0 19.1092 0 0 0 1 1 0 0 0";
    };
 };
 //--- OBJECT WRITE END ---
