@@ -40,8 +40,7 @@ new Scene(OutpostLevel) {
    new TimeOfDay() {
       dayLength = "35";
       startTime = "0.09";
-      time = "0.09";
-      play = "0";
+      time = "0.180735";
       nightScale = "1";
       position = "-182.594 54.5451 536.878";
    };
