@@ -3,6 +3,7 @@
     LevelFile="@assetFile=Outpost.mis"
     LevelName="Outpost"
     PostFXPresetFile="@assetFile=Outpost.postfxpreset.tscript"
+    DecalsFile="@assetFile=Outpost.mis.decals"
     ForestFile="@assetFile=Outpost.forest"
     gameModesNames="DeathMatchGame"
     previewImageAsset0="@asset=testMaps:Outpost_preview_image"
