@@ -4,15 +4,19 @@
     VersionId="1">
     <TerrainMaterial
         Name="dirt_grass"
-        DiffuseMapAsset="testMaps:dirt_grass_image"
+        DiffuseMapAsset="@asset=testMaps:dirt_grass_image"
+        DiffuseMapFile="data/testMaps/terrains/Example/dirt_grass.png"
         diffuseSize="200"
-        NormalMapAsset="testMaps:dirt_grass_n_image"
-        DetailMapAsset="testMaps:dirt_grass_d_image"
+        NormalMapAsset="@asset=testMaps:dirt_grass_n_image"
+        NormalMapFile="data/testMaps/terrains/Example/dirt_grass_n.png"
+        DetailMapAsset="@asset=testMaps:dirt_grass_d_image"
+        DetailMapFile="data/testMaps/terrains/Example/dirt_grass_d.png"
         detailSize="4"
-        ORMConfigMapAsset="testMaps:dirt_grass_c_image"
+        ORMConfigMapAsset="@asset=testMaps:dirt_grass_c_image"
+        ORMConfigMapFile="data/testMaps/terrains/Example/dirt_grass_c.png"
         internalName="testMaps:dirt_grass"
         detailBrightness="1"
-        Enabled="1"
+        enabled="1"
         isManaged="1"
         originalAssetName="dirt_grass"/>
     <Material
@@ -25,9 +29,9 @@
         terrainMaterials="1">
         <Material.EffectColors>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.0511434 0.0835351 0 1"/>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.222624 0.380056 0 1"/>
         </Material.EffectColors>
     </Material>
 </TerrainMaterialAsset>

@@ -29,9 +29,9 @@
         terrainMaterials="1">
         <Material.EffectColors>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.100482 0.0242977 0 1"/>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.393123 0.0772627 0 1"/>
         </Material.EffectColors>
     </Material>
 </TerrainMaterialAsset>
