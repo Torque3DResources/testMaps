@@ -4,12 +4,16 @@
     VersionId="1">
     <TerrainMaterial
         Name="stony"
-        DiffuseMapAsset="testMaps:stony_image"
+        DiffuseMapAsset="@asset=testMaps:stony_image"
+        DiffuseMapFile="data/testMaps/terrains/Example/stony.png"
         diffuseSize="200"
-        NormalMapAsset="testMaps:stony_n_image"
-        DetailMapAsset="testMaps:stony_d_image"
+        NormalMapAsset="@asset=testMaps:stony_n_image"
+        NormalMapFile="data/testMaps/terrains/Example/stony_n.png"
+        DetailMapAsset="@asset=testMaps:stony_d_image"
+        DetailMapFile="data/testMaps/terrains/Example/stony_d.png"
         detailSize="4"
-        ORMConfigMapAsset="testMaps:stony_c_image"
+        ORMConfigMapAsset="@asset=testMaps:stony_c_image"
+        ORMConfigMapFile="data/testMaps/terrains/Example/stony_c.png"
         internalName="testMaps:stony"
         detailBrightness="1"
         enabled="1"
@@ -23,15 +27,11 @@
         impactSoundId="0"
         materialTag0="Terrain"
         terrainMaterials="1">
-        <Material.Stages>
-            <Stages_beginarray
-                DiffuseColor="White"/>
-        </Material.Stages>
         <Material.EffectColors>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.100482 0.0714935 0.0531058 1"/>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.330344 0.229208 0.162017 1"/>
         </Material.EffectColors>
     </Material>
 </TerrainMaterialAsset>

@@ -4,15 +4,19 @@
     VersionId="1">
     <TerrainMaterial
         Name="grassy"
-        DiffuseMapAsset="testMaps:grassy_image"
+        DiffuseMapAsset="@asset=testMaps:grassy_image"
+        DiffuseMapFile="data/testMaps/terrains/Example/grassy.png"
         diffuseSize="200"
-        NormalMapAsset="testMaps:grassy_n_image"
-        DetailMapAsset="testMaps:grassy_d_image"
+        NormalMapAsset="@asset=testMaps:grassy_n_image"
+        NormalMapFile="data/testMaps/terrains/Example/grassy_n.png"
+        DetailMapAsset="@asset=testMaps:grassy_d_image"
+        DetailMapFile="data/testMaps/terrains/Example/grassy_d.png"
         detailSize="4"
-        ORMConfigMapAsset="testMaps:grassy_c_image"
+        ORMConfigMapAsset="@asset=testMaps:grassy_c_image"
+        ORMConfigMapFile="data/testMaps/terrains/Example/grassy_c.png"
         internalName="testMaps:grassy"
         detailBrightness="1"
-        Enabled="1"
+        enabled="1"
         isManaged="1"
         originalAssetName="grassy"/>
     <Material
@@ -25,9 +29,9 @@
         terrainMaterials="1">
         <Material.EffectColors>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.0511434 0.0835351 0 1"/>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.222624 0.380056 0 1"/>
         </Material.EffectColors>
     </Material>
 </TerrainMaterialAsset>

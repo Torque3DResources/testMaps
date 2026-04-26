@@ -4,12 +4,16 @@
     VersionId="1">
     <TerrainMaterial
         Name="sandy"
-        DiffuseMapAsset="testMaps:Sandy_b_image"
+        DiffuseMapAsset="@asset=testMaps:Sandy_b_image"
+        DiffuseMapFile="data/testMaps/terrains/Example/Sandy_b.png"
         diffuseSize="200"
-        NormalMapAsset="testMaps:sandy_n_image"
-        DetailMapAsset="testMaps:sandy_d_image"
+        NormalMapAsset="@asset=testMaps:sandy_n_image"
+        NormalMapFile="data/testMaps/terrains/Example/sandy_n.png"
+        DetailMapAsset="@asset=testMaps:sandy_d_image"
+        DetailMapFile="data/testMaps/terrains/Example/sandy_d.png"
         detailSize="2"
-        ORMConfigMapAsset="testMaps:sandy_c_image"
+        ORMConfigMapAsset="@asset=testMaps:sandy_c_image"
+        ORMConfigMapFile="data/testMaps/terrains/Example/sandy_c.png"
         internalName="testMaps:sandy"
         detailBrightness="1"
         enabled="1"
@@ -23,11 +27,15 @@
         impactSoundId="0"
         materialTag0="Terrain"
         terrainMaterials="1">
+        <Material.Stages>
+            <Stages_beginarray
+                DiffuseColor="White"/>
+        </Material.Stages>
         <Material.EffectColors>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.2957 0.246858 0.121131 1"/>
             <EffectColor
-                EffectColor="0.42 0.42 0 1"/>
+                EffectColor="0.692071 0.585725 0.284101 1"/>
         </Material.EffectColors>
     </Material>
 </TerrainMaterialAsset>
