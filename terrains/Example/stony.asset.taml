@@ -23,8 +23,8 @@
         Name="TerrainFX_stony"
         mapTo="testMaps:stony"
         showDust="true"
-        footstepSoundId="0"
-        impactSoundId="0"
+        footstepSoundId="1"
+        impactSoundId="1"
         materialTag0="Terrain"
         terrainMaterials="1">
         <Material.EffectColors>

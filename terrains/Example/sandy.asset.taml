@@ -23,14 +23,10 @@
         Name="TerrainFX_sandy"
         mapTo="testMaps:sandy"
         showDust="true"
-        footstepSoundId="0"
-        impactSoundId="0"
+        footstepSoundId="3"
+        impactSoundId="3"
         materialTag0="Terrain"
         terrainMaterials="1">
-        <Material.Stages>
-            <Stages_beginarray
-                DiffuseColor="White"/>
-        </Material.Stages>
         <Material.EffectColors>
             <EffectColor
                 EffectColor="0.2957 0.246858 0.121131 1"/>
