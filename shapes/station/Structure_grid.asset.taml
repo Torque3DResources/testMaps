@@ -4,12 +4,15 @@
     VersionId="1">
     <Material
         Name="Structure_grid"
-        mapTo="grid">
+        mapTo="grid"
+        footstepSoundId="2"
+        impactSoundId="2"
+        ImpactFXIndex="2">
         <Material.Stages>
             <Stages_beginarray
-                DiffuseMapAsset="testMaps:station_grid_image"
-                NormalMapAsset="testMaps:grid_n_image"
-                ORMConfigMapAsset="testMaps:grid_orm_image"/>
+                DiffuseMapAsset="@asset=testMaps:station_grid_image"
+                NormalMapAsset="@asset=testMaps:grid_n_image"
+                ORMConfigMapAsset="@asset=testMaps:grid_orm_image"/>
         </Material.Stages>
     </Material>
 </MaterialAsset>

@@ -4,12 +4,15 @@
     VersionId="1">
     <Material
         Name="Structure_wall"
-        mapTo="building01walls">
+        mapTo="building01walls"
+        footstepSoundId="1"
+        impactSoundId="1"
+        ImpactFXIndex="1">
         <Material.Stages>
             <Stages_beginarray
-                DiffuseMapAsset="testMaps:building01walls_image"
-                NormalMapAsset="testMaps:building01walls_n_image"
-                ORMConfigMapAsset="testMaps:building01walls_orm_image"/>
+                DiffuseMapAsset="@asset=testMaps:building01walls_image"
+                NormalMapAsset="@asset=testMaps:building01walls_n_image"
+                ORMConfigMapAsset="@asset=testMaps:building01walls_orm_image"/>
         </Material.Stages>
     </Material>
 </MaterialAsset>
